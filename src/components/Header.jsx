@@ -8,10 +8,6 @@ export default function Header() {
 				<i className="pi pi-user"></i>
 				<p className="">Magnificent<br/>soles</p>
 			</div>
-            {/* NavBar */}
-            <div className="">
-                
-            </div>
 		</>
 	);
 }
