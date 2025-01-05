@@ -1,6 +1,4 @@
 import React from "react";
-// import homeBanner from '';
-
 export default function HomePage() {
 	return (
 		<>
@@ -35,8 +33,6 @@ export default function HomePage() {
                 {/* images */}
 
                 <div className="">
-                    {/* <img src={homeBanner} alt="" /> */}
-
                 </div>
 			</div>
 		</>
