@@ -1,14 +1,12 @@
 import "./App.css";
 import "primeicons/primeicons.css";
 import Header from "./components/Header";
-import Menubar from "./Menu/menubar";
 
 function App() {
 	return (
 		<>
-			<div className="bg-gray-300">
+			<div className="border border-red-100">
 				<Header />
-        <Menubar />
 			</div>
 		</>
 	);
