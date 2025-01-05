@@ -34,6 +34,7 @@ export default function HomePage() {
                 {/* images */}
 
                 <div className="">
+                    <p>here</p>
                 </div>
 			</div>
 		</>
