@@ -1,4 +1,8 @@
 import React from "react";
+
+import { Carousel } from "primereact/carousel";
+import TextSlider from "../components/TextSlider";
+
 import feet from "../public/download.png";
 import BG from "../public/image.jpg";
 import B from "../public/B.jpg";
@@ -21,6 +25,8 @@ import f from "../public/f.jpg";
 import ff from "../public/ff.jpg";
 import fff from "../public/fff.jpg";
 import ffff from "../public/ffff.jpg";
+import SE from "../public/securitybg.jpg";
+import Blogs from "./Blogs";
 
 export default function Sellers() {
 	return (
@@ -28,7 +34,7 @@ export default function Sellers() {
 			<div className="bg-gray-300 h-[100%]">
 				{/* how it works */}
 				<div className="pt-5 ">
-					<p className="mt-10 mb-6 text-[2.8rem] text-center font-bold">
+					<p className="mt-10 mb-6 md:text-[2.8rem] text-[1.4rem] text-center font-bold">
 						MEMBER FEATURES
 					</p>
 				</div>
@@ -38,56 +44,60 @@ export default function Sellers() {
 						<div className="border border-white bg-[#ed3b59] rounded-full px-10 py-4">
 							<a
 								href="#"
-								className="text-center text-white fonbold mt-4 text-lg">
+								className="text-center text-white fonbold mt-4 lg:text-lg md:text-lg">
 								SELLERS
 							</a>
 						</div>
-						<div className=" rounded-full px-10 py-4">
+						<div className=" rounded-full md:px-10 px-10 lg:px-10 py-4">
 							<a
 								href="#"
-								className="text-center text-white fonbold mt-4 text-lg">
+								className="text-center text-white fonbold mt-4 lg:text-lg md:text-lg">
 								BUYERS
 							</a>
 						</div>
 					</div>
 				</div>
 				{/* list */}
-				<ol className="my-8 flex justify-center gap-10">
+				<ol className="my-8 px-3 flex justify-center gap-10">
 					<a href="#">
-						<li className="text-gray-700 ml-5 md:ml-0 lg:m-0 font-normal text-2xl hover:text-purple-600 ">
+						<li className="text-gray-700 ml-5 md:ml-0 lg:text-2xl lg:m-0 font-normal md:text-2xl hover:text-purple-600 ">
 							Payouts
 						</li>
 					</a>
 					<a href="#">
-						<li className="text-gray-700 font-normal text-2xl hover:text-purple-600 ">
+						<li className="text-gray-700 font-normal lg:text-2xl md:text-2xl hover:text-purple-600 ">
 							custom offers
 						</li>
 					</a>
 					<a href="#">
-						<li className="text-gray-700 font-normal text-2xl hover:text-purple-600 ">
+						<li className="text-gray-700 font-normal lg:text-2xl md:text-2xl hover:text-purple-600 ">
 							uploading content
 						</li>
 					</a>
 				</ol>
 				<hr className="mt-4 h-4 w-4 text-purple-500" />
 
-				<div className="bg-purple-600 gap-10 mb-20 flex justify-center place-items-center py-10">
-					<div className="p-4 ">
+				<div className="bg-purple-600 gap-10 mb-20 md:flex lg:flex justify-center place-items-center md:py-10 lg:py-10">
+					<div className="md:p-4 lg:p-4 mb-2 px-4 py-6">
 						<ul className="list-disc text-white list-inside">
-							<li className="text-2xl font-medium mb-7">
+							<li className="md:text-2xl lg:text-2xl font-medium mb-7">
 								Sellers earn 90% on all sales
 							</li>
-							<li className="text-2xl font-medium mb-7">
+							<li className="md:text-2xl lg:text-2xl font-medium mb-7">
 								Weekly payouts direct to your bank account
 							</li>
-							<li className="text-2xl font-medium mt-4">
+							<li className="md:text-2xl lg:text-2xl font-medium mb-3 mt-4">
 								PCI compliant to keep your sensitive info safe
 							</li>
 						</ul>
 					</div>
 					{/* image */}
 					<div className="">
-						<img src={feet} className="shadow-2xl h-[30vh]" alt="feets" />
+						<img
+							src={feet}
+							className="shadow-2xl px-3 md:px-0 h-[30vh]"
+							alt="feets"
+						/>
 					</div>
 				</div>
 			</div>
@@ -95,17 +105,18 @@ export default function Sellers() {
 			{/* verified model page */}
 			<div className=" ">
 				<div className=" ">
-					<p className="mt-10 mb-6 text-[2.8rem] text-center font-bold">
+					<p className="mt-10 mb-6 text-[1.4rem] md:text-[2.8rem] text-center font-bold">
 						VERIFIED MODELS
 					</p>
+					
 					<div className="relative">
 						{/* image */}
 						<div className="flex justify-center">
-							<div className="relative w-[80%] flex justify-center h-[80vh]">
+							<div className="relative md:w-[80%] w-[100%] flex justify-center md:h-[80vh]">
 								<img
 									src={BG}
 									alt="feet"
-									className="w-full hover:bg-purple-400 shadow-2xl  h-full"
+									className="w-full hover:bg-purple-400 mx-3 shadow-2xl  h-full"
 								/>
 								<div className="absolute inset-0 bg-black bg-opacity-30"></div>
 							</div>
@@ -113,12 +124,12 @@ export default function Sellers() {
 
 						<div className="flex items-center justify-center absolute border inset-0">
 							<div className="">
-								<p className="mt-10 mb-6 text-white text-[2.8rem] text-center font-bold">
+								<p className="mt-10 mb-6 text-white text-[1.4rem] md:text-[2.8rem] text-center font-bold">
 									View Millions Of Verified Models
 								</p>
 								{/* button */}
 								<div className="flex items-center justify-center">
-									<button className="border border-white  bg-purple-600 px-20 py-5 rounded-full hover:bg-[#ed3b59]">
+									<button className="border border-white  bg-purple-600 px-10 md:px-20 py-5 rounded-full hover:bg-[#ed3b59]">
 										<a href="#" className="font-medium text-white">
 											VIEW ALL SELLERS
 										</a>
@@ -133,17 +144,17 @@ export default function Sellers() {
 			{/* popular content page */}
 			<div className=" ">
 				<div className=" ">
-					<p className="mt-10 mb-6 text-[2.8rem] text-center font-bold">
+					<p className="mt-10 mb-6 text-[1.4rem] md:text-[2.8rem] text-center font-bold">
 						POPULAR CONTENT
 					</p>
 					<div className="relative">
 						{/* image */}
 						<div className="flex justify-center">
-							<div className="relative w-[80%] flex justify-center h-[80vh]">
+							<div className="relative w-[100%] md:w-[80%] flex justify-center md:h-[80vh]">
 								<img
 									src={B}
 									alt="feet"
-									className="w-full hover:bg-purple-400  h-full"
+									className="w-full hover:bg-purple-400 mx-3 h-full"
 								/>
 								<div className="absolute inset-0 bg-black bg-opacity-30"></div>
 							</div>
@@ -151,12 +162,12 @@ export default function Sellers() {
 
 						<div className="flex items-center justify-center absolute border inset-0">
 							<div className="">
-								<p className="mt-10 mb-6 text-white text-[2.8rem] text-center font-bold">
+								<p className="mt-10 mb-6 text-white text-[1.4rem] md:text-[2.8rem] text-center font-bold">
 									View Millions Of foot fetish <br /> pictures and videos
 								</p>
 								{/* button */}
 								<div className="flex items-center justify-center">
-									<button className="border border-white  bg-purple-600 px-20 py-5 rounded-full hover:bg-[#ed3b59]">
+									<button className="border border-white  bg-purple-600 px-10 md:px-20 py-5 rounded-full hover:bg-[#ed3b59]">
 										<a href="#" className="font-medium text-white">
 											VIEW MORE CONTENT
 										</a>
@@ -173,10 +184,10 @@ export default function Sellers() {
 				<div className=" ">
 					{/* texts */}
 					<div className="">
-						<p className="mt-10 text-[2.8rem] text-center font-bold">
+						<p className="mt-10 md:text-[2.8rem] text-[1.4rem] text-center font-bold">
 							POPULAR CATEGORIES
 						</p>
-						<p className="pt-1 text-center text-2xl text-gray-400">
+						<p className="pt-1 text-center text-[14px] md:text-2xl text-gray-400">
 							Explore dozens of niche feet categories to find your preferred{" "}
 							<br />
 							content easily
@@ -184,155 +195,161 @@ export default function Sellers() {
 					</div>
 
 					{/* Grids 1 */}
-					<div className="grid grid-cols-4 gap-6 mx-10 mt-10">
+					<div className="grid md:grid-cols-4 grid-cols-3 gap-6 mx-10 mt-10">
 						{/* A */}
 						<a href="#" className="">
-							<div className="border border-blue-400 hover:bg-purple-600 h-[40vh] rounded-2xl">
+							<div className="border border-blue-400 hover:bg-purple-600 h-[18vh] md:h-[40vh] rounded-2xl">
 								<img
 									src={hil}
 									className="w-full hover:bg-purple-400 hover:opacity-30 rounded-2xl h-full"
 									alt="pictures"
 								/>
 							</div>
-							<p className="text-center font-bold mt-4 text-lg">HIGH HEELS </p>
+							<p className="text-center font-bold mt-4  md:text-lg">
+								HIGH HEELS{" "}
+							</p>
 						</a>
 						{/* B  */}
 						<a href="#" className="">
-							<div className="border border-blue-400 hover:bg-purple-600 h-[40vh] rounded-2xl">
+							<div className="border border-blue-400 hover:bg-purple-600 h-[18vh] md:h-[40vh] rounded-2xl">
 								<img
 									src={we}
 									className="w-full hover:bg-purple-400 hover:opacity-30 rounded-2xl h-full"
 									alt="pictures"
 								/>
 							</div>
-							<p className="text-center font-bold mt-4 text-lg">SOLES </p>
+							<p className="text-center font-bold mt-4  md:text-lg">SOLES </p>
 						</a>
 						{/* C  */}
 						<a href="#" className="">
-							<div className="border border-blue-400 hover:bg-purple-600 h-[40vh] rounded-2xl">
+							<div className="border border-blue-400 hover:bg-purple-600 h-[18vh] md:h-[40vh] rounded-2xl">
 								<img
 									src={hi}
 									className="w-full hover:bg-purple-400 hover:opacity-30 rounded-2xl h-full"
 									alt="pictures"
 								/>
 							</div>
-							<p className="text-center font-bold mt-4 text-lg">NAIL POLISH </p>
+							<p className="text-center font-bold mt-4  md:text-lg">
+								NAIL POLISH{" "}
+							</p>
 						</a>
 						{/* D  */}
 						<a href="#" className="">
-							<div className="border border-blue-400 hover:bg-purple-600 h-[40vh] rounded-2xl">
+							<div className="border border-blue-400 hover:bg-purple-600 h-[18vh] md:h-[40vh] rounded-2xl">
 								<img
 									src={am}
 									className="w-full hover:bg-purple-400 hover:opacity-30 rounded-2xl h-full"
 									alt="pictures"
 								/>
 							</div>
-							<p className="text-center font-bold mt-4 text-lg">SOCKS </p>
+							<p className="text-center font-bold mt-4  md:text-lg">SOCKS </p>
 						</a>
-					</div>
 
-					{/* Grids 2 */}
-					<div className="grid grid-cols-4 gap-6 mx-10 my-5">
+						{/* Grids 2 */}
+
 						{/* A */}
 						<a href="#" className="">
-							<div className="border border-blue-400 hover:bg-purple-600 h-[40vh] rounded-2xl">
+							<div className="border border-blue-400 hover:bg-purple-600 h-[18vh] md:h-[40vh] rounded-2xl">
 								<img
 									src={lo}
 									className="w-full hover:bg-purple-400 hover:opacity-30 rounded-2xl h-full"
 									alt="pictures"
 								/>
 							</div>
-							<p className="text-center font-bold mt-4 text-lg">LOTION </p>
+							<p className="text-center font-bold mt-4  md:text-lg">LOTION </p>
 						</a>
 						{/* B  */}
 						<a href="#" className="">
-							<div className="border border-blue-400 hover:bg-purple-600 h-[40vh] rounded-2xl">
+							<div className="border border-blue-400 hover:bg-purple-600 h-[18vh] md:h-[40vh] rounded-2xl">
 								<img
 									src={pe}
 									className="w-full hover:bg-purple-400 hover:opacity-30 rounded-2xl h-full"
 									alt="pictures"
 								/>
 							</div>
-							<p className="text-center font-bold mt-4 text-lg">PEDICURE </p>
+							<p className="text-center font-bold mt-4  md:text-lg">
+								PEDICURE{" "}
+							</p>
 						</a>
 						{/* C  */}
 						<a href="#" className="">
-							<div className="border border-blue-400 hover:bg-purple-600 h-[40vh] rounded-2xl">
+							<div className="border border-blue-400 hover:bg-purple-600 h-[18vh] md:h-[40vh] rounded-2xl">
 								<img
 									src={di}
 									className="w-full hover:bg-purple-400 hover:opacity-30 rounded-2xl h-full"
 									alt="pictures"
 								/>
 							</div>
-							<p className="text-center font-bold mt-4 text-lg">DIRTY FEET </p>
+							<p className="text-center font-bold mt-4  md:text-lg">
+								DIRTY FEET{" "}
+							</p>
 						</a>
 						{/* D  */}
 						<a href="#" className="">
-							<div className="border border-blue-400 hover:bg-purple-600 h-[40vh] rounded-2xl">
+							<div className="border border-blue-400 hover:bg-purple-600 h-[18vh] md:h-[40vh] rounded-2xl">
 								<img
 									src={ma}
 									className="w-full hover:bg-purple-400 hover:opacity-30 rounded-2xl h-full"
 									alt="pictures"
 								/>
 							</div>
-							<p className="text-center font-bold mt-4 text-lg">MALE</p>
+							<p className="text-center font-bold mt-4  md:text-lg">MALE</p>
 						</a>
-					</div>
 
-					{/* Grids 3 */}
-					<div className="grid grid-cols-4 gap-6 mx-10 my-5">
+						{/* Grids 3 */}
+
 						{/* A */}
 						<a href="#" className="">
-							<div className="border border-blue-400 hover:bg-purple-600 h-[40vh] rounded-2xl">
+							<div className="border border-blue-400 hover:bg-purple-600 h-[18vh] md:h-[40vh] rounded-2xl">
 								<img
 									src={da}
 									className="w-full hover:bg-purple-400 hover:opacity-30 rounded-2xl h-full"
 									alt="pictures"
 								/>
 							</div>
-							<p className="text-center font-bold mt-4 text-lg">DANCER </p>
+							<p className="text-center font-bold mt-4  md:text-lg">DANCER </p>
 						</a>
 						{/* B  */}
 						<a href="#" className="">
-							<div className="border border-blue-400 hover:bg-purple-600 h-[40vh] rounded-2xl">
+							<div className="border border-blue-400 hover:bg-purple-600 h-[18vh] md:h-[40vh] rounded-2xl">
 								<img
 									src={ta}
 									className="w-full hover:bg-purple-400 hover:opacity-30 rounded-2xl h-full"
 									alt="pictures"
 								/>
 							</div>
-							<p className="text-center font-bold mt-4 text-lg">TATTOO </p>
+							<p className="text-center font-bold mt-4  md:text-lg">TATTOO </p>
 						</a>
 						{/* C  */}
 						<a href="#" className="">
-							<div className="border border-blue-400 hover:bg-purple-600 h-[40vh] rounded-2xl">
+							<div className="border border-blue-400 hover:bg-purple-600 h-[18vh] md:h-[40vh] rounded-2xl">
 								<img
 									src={sf}
 									className="w-full hover:bg-purple-400 hover:opacity-30 rounded-2xl h-full"
 									alt="pictures"
 								/>
 							</div>
-							<p className="text-center font-bold mt-4 text-lg">
+							<p className="text-center font-bold mt-4  md:text-lg">
 								SHOWING FACE{" "}
 							</p>
 						</a>
 						{/* D  */}
 						<a href="#" className="">
-							<div className="border border-blue-400 hover:bg-purple-600 h-[40vh] rounded-2xl">
+							<div className="border border-blue-400 hover:bg-purple-600 h-[18vh] md:h-[40vh] rounded-2xl">
 								<img
 									src={ny}
 									className="w-full hover:bg-purple-400 hover:opacity-30 rounded-2xl h-full"
 									alt="pictures"
 								/>
 							</div>
-							<p className="text-center font-bold mt-4 text-lg">NYLON </p>
+							<p className="text-center font-bold mt-4  md:text-lg">NYLON </p>
 						</a>
 					</div>
 				</div>
 
 				{/* button  */}
 				<div className="flex items-center justify-center my-10">
-					<button className="border border-white  bg-purple-600 px-20 py-5 rounded-full hover:bg-[#ed3b59]">
+					<button className="border border-white  bg-purple-600 px-10 md:px-20 py-5 rounded-full hover:bg-[#ed3b59]">
 						<a href="#" className="font-medium text-white">
 							VIEW MORE CATEGORIES
 						</a>
@@ -344,17 +361,17 @@ export default function Sellers() {
 			<div className="bg-gray-300 h-full">
 				{/* texts */}
 				<div className="pt-10">
-					<p className="mt-10 text-[2.8rem] text-center font-bold">
+					<p className="md:mt-10 text-[1.6rem] md:text-[2.8rem] text-center font-bold">
 						Free Foot Fetish Pics
 					</p>
-					<p className="pt-1 text-center text-2xl text-gray-400">
+					<p className="pt-1 text-center text-[15px] md:text-2xl text-gray-400">
 						Explore thousands of free feet pictures from ID-verified foot <br />
 						fetish models!
 					</p>
 				</div>
 				{/* general container for the free foot fetish */}
-				<div className="mt-4 flex justify-center place-items-center">
-					<div className=" flex">
+				<div className="mt-4  md:flex justify-center place-items-center">
+					<div className=" grid grid-cols-1 md:flex">
 						{/* first div  */}
 						<div className=" h-full  ">
 							<div className="img">
@@ -432,8 +449,8 @@ export default function Sellers() {
 					</div>
 				</div>
 				{/* fetish button */}
-                <div className="flex items-center justify-center py-10">
-					<button className="border border-white bg-purple-600 px-20 py-5 rounded-full hover:bg-[#ed3b59]">
+				<div className="flex items-center justify-center py-10">
+					<button className="border border-white bg-purple-600 px-10 md:px-20 py-5 rounded-full hover:bg-[#ed3b59]">
 						<a href="#" className="font-medium text-white">
 							VIEW FEET PICS
 						</a>
@@ -441,10 +458,104 @@ export default function Sellers() {
 				</div>
 			</div>
 
-            {/* how much your feet worth */}
-            <div className="">
+			{/* how much your feet worth */}
+			<div className="">
+				{/* text div */}
+				<div className="">
+					<p className="mt-10 md:text-[2.8rem] text-[1.4rem] text-center font-bold">
+						How much your Feet Worth?
+					</p>
+					<div className="flex items-center justify-center">
+						<p className="pt-1 my-3 mx-3 text-center md:w-[100%] lg:w-[70%] md:mx-3 text-[15px] md:text-2xl text-gray-400">
+							Upload a photo of your feet, and our expert analysis, powered by a
+							unique valuation system backed by millions of data points, will
+							reveal how much money you could potentially make from your feet!
+							Must be 18+ to submit.
+						</p>
+					</div>
+				</div>
+				{/* upload page */}
+				<div className="border border-red-400 mx-40 py-24"></div>
+				{/* feet worth button */}
+				<div className="flex items-center justify-center py-10">
+					<button className="border border-white bg-purple-600 px-10 md:px-20 py-5 rounded-full hover:bg-[#ed3b59]">
+						<a href="#" className="font-medium text-white">
+							GET RESULTS
+						</a>
+					</button>
+				</div>
+			</div>
 
-            </div>
+			{/* Security page */}
+			<div className="">
+				<div className="relative">
+					{/* image */}
+					<div className="flex justify-center">
+						<div className="relative md:w-[100%] w-[100%] flex justify-center xl:h-[80vh] sm:h-[40vh] lg:h-[40vh] md:h-[40vh]">
+							<img
+								src={SE}
+								alt="feet"
+								className="w-full hover:bg-purple-400 shadow-2xl xl:h-[80vh] md:h-[40vh] h-full"
+							/>
+							<div className="absolute inset-0 bg-black bg-opacity-30"></div>
+						</div>
+					</div>
+
+					<div className="flex items-center justify-center absolute border inset-0">
+						<div className="px-8">
+							<p className="mt-10 mb-2 text-white text-[1.4rem] md:text-[2.8rem] text-left font-bold">
+								IS FEETFINDER SAFE?
+							</p>
+							<p className="mt-2 mb-6 text-white md:text-[1.6rem] xl:w-[50%] lg:w-[100%] text-[13px] sm:text-[1.4rem] md:w-[100%] text-left font-bold">
+								FeetFinder is the safest and most secure website to buy and sell
+								feet content. Encrypted servers, PCI-compliant security and
+								third party firewall ensures your data and card info remains
+								hidden and safe from potential threats. No other websites to
+								sell feet pics offer the same level of security and have the
+								track record of FeetFinder.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			{/* What people are saying */}
+			<div className="">
+				<p className="mt-10 md:text-[2.8rem] text-[1.4rem] text-center font-bold">
+					WHAT PEOPLE ARE SAYING
+				</p>
+
+				<div className="flex items-center justify-center mt-2">
+					<div className="flex gap-1">
+						<i className="pi pi-star font-bold text-2xl text-green-800"></i>
+						<p className="font-semibold text-lg">Trustpilot</p>
+					</div>
+				</div>
+				<div className="flex items-center justify-center my-2">
+					<div className="flex gap-1">
+						<i className="pi pi-star font-bold text-2xl bg-green-500 text-white"></i>
+						<i className="pi pi-star font-bold text-2xl bg-green-500 text-white"></i>
+						<i className="pi pi-star font-bold text-2xl bg-green-500 text-white"></i>
+						<i className="pi pi-star font-bold text-2xl bg-green-500 text-white"></i>
+						<i className="pi pi-star font-bold text-2xl bg-gray-500 text-white"></i>
+					</div>
+				</div>
+				<div className="flex items-center justify-center my-2">
+					<p className="text-[14px]">
+						Trust Score <span className="font-bold">4.1</span>|{" "}
+						<span className="underline">3,575 reviews</span>{" "}
+					</p>
+				</div>
+				{/* slider path */}
+				<div className="">
+					<TextSlider />
+				</div>
+			</div>
+
+			{/* blogs */}
+			<div>
+				<Blogs />
+			</div>
 		</>
 	);
 }

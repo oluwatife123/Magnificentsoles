@@ -4,10 +4,10 @@ export default function HowItWorks() {
 	return (
 		<>
 			<div className="">
-				<p className="mt-10 text-[2.8rem] text-center font-bold ">HOW IT WORKS</p>
+				<p className="md:mt-10 lg:mt-10 lg:text-[2.8rem] mt-8 md:text-[2.8rem] text-[1.4rem] text-center font-bold ">HOW IT WORKS</p>
 				{/* how it works attribute */}
 				<div className="">
-					<div className=" md:h-[100vh] lg:h-[100vh] h-[40vh] flex justify-center place-items-center">
+					<div className=" md:h-[50vh] lg:h-[100vh] sm:h-[50vh] h-[37vh] px-3 flex justify-center place-items-center">
 						<div className="relative md:w-[80%] w-[100%]">
 							{/* Image container */}
 							<span className="box-border justify-center items-center w-full block absolute inset-0">

@@ -1,5 +1,5 @@
 import React from "react";
-import Menubar from "../Menu/menubar";
+import Menubar from "../Auth/Menubar";
 import SignIn from "../Auth/SignUp";
 import Login from "../Auth/Login";
 

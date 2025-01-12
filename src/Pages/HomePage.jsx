@@ -1,106 +1,122 @@
 import React from "react";
-import img1 from "../public/banner.png";
-import img2 from "../public/homebanner.png";
+import "primeicons/primeicons.css";
 import HowItWorks from "./HowItWorks";
 import Sellers from "./Sellers";
+import banner from "../public/banner.png";
+import homebanner from "../public/homebanner.png";
+import { Link } from "react-router-dom";
+import SignUp from "../Auth/SignUp";
 
 export default function HomePage() {
 	return (
 		<>
-			<div className="w-[100%] overflow-x-hidden ">
-				<div className="bg-purple-600 lg:w-[100%] md:w-[100%] md:gap-20 mb:flex pt-6 pb-4 ">
-					<div className="md:ml-10 lg:ml-10 ml-9 lg:w-[40%] md:w-[40%] border md:text-left">
-						<div className="text-white ">
-							<p className="md:text-[2.2rem] text-[1.5rem] font-bold">
+			<div className="w-full overflow-x-hidden">
+				{/* Hero Section */}
+				<div className="bg-purple-600 lg:flex md:flex pt-6 pb-4">
+					<div className="md:ml-10 lg:ml-10 sm:ml-9 px-3 lg:w-[40%] sm:w-[90%] md:w-[90%]">
+						{/* Hero Text */}
+						<div className="text-white mt-20">
+							<p className="md:text-[2.2rem] text-[1.9rem] font-bold">
 								View, Buy & Sell Feet Pics
 							</p>
-							<p className="md:text-[1.6rem] text-[1rem] mt-4">
+							<p className="md:text-[1.6rem] text-[1rem] mt-3 md:mt-4">
 								FeetFinder is the safest, largest, and easiest website to view,
 								buy and sell feet content. With millions of users and over 5,000
 								five-star reviews, FeetFinder is the best website for anyone
 								interested in buying or selling feet content.
 							</p>
 						</div>
-						{/* buttons */}
-						<div className="flex gap-4 w-[100%] mt-5">
-							<button className="px-4 py-3 w-full md:w-[50%] bg-pink-600 hover:shadow-xl rounded-full">
-								<p className="text-white font-bold text-xl">
+
+						{/* Buttons */}
+						<div className="flex gap-4 w-full mt-5">
+							<button className="px-4 py-3 w-full md:w-1/2 bg-pink-600 hover:shadow-xl rounded-full">
+								<p className="text-white font-bold md:text-xl">
 									View/Buy Feet Pics
 								</p>
 							</button>
-
-							<button className="px-4 py-3 w-full md:w-[50%] bg-pink-600 hover:shadow-xl rounded-full">
-								<p className="text-white font-bold text-xl">Sell Feet Price</p>
+							<button className="px-4 py-3 w-full md:w-1/2 bg-pink-600 hover:shadow-xl rounded-full">
+								<p className="text-white font-bold md:text-xl">
+									Sell Feet Pics
+								</p>
 							</button>
 						</div>
-						{/* signin */}
+
+						{/* Sign-in Link */}
 						<div className="mt-4">
 							<p className="text-white text-lg">
 								Already have an account?{" "}
-								<a href="#" className="underline">
-									{" "}
+								<Link
+									to="/signup"
+									className="hover:text-gray-300 text-lg underline"
+									onClick={() => setIsOpen(false)}>
 									SIGN IN
-								</a>
+								</Link>
 							</p>
 						</div>
 					</div>
-					{/* images */}
-					<div className="w-[60%] gap-10 mb:flex">
-						<div className="w-[35%] ">
+
+					{/* Hero Images */}
+					<div className="md:w-[60%] md:flex lg:flex gap-10">
+						<div className="w-[35%]">
 							<img
-								src={img1}
+								src={banner}
 								alt="Banner"
-								className="w-full h-[80vh] hidden md:block lg:block rounded-3xl"
+								className="lg:w-full md:w-full md:h-[35vh] lg:h-[80vh] hidden md:block lg:block rounded-3xl"
 							/>
 						</div>
 						<div className="w-[35%]">
 							<img
-								src={img2}
-								alt="homebanner"
-								className="w-full h-[80vh] hidden md:block lg:block mt-20 rounded-3xl"
+								src={homebanner}
+								alt="Home Banner"
+								className="lg:w-full md:w-full md:h-[35vh] lg:h-[80vh] hidden md:block lg:block mt-20 rounded-3xl"
 							/>
 						</div>
 					</div>
 				</div>
-				{/* the flex pages */}
-				<div className=" ">
-					<div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 bg-white">
-						<div className="border hover:bg-gray-200 cursor-pointer border-l-gray-200 text-center md:py-20 md:px-20 py-10 px-10">
-							<img src="" alt="" />
-							<p className="text-purple-700 md:text-3xl font-bold">10,000,000+</p>
-							<p className=" mt-4 text-xl">Feet Pics Sold</p>
+
+				{/* Stats Section */}
+				<div className="mx-3">
+					<div className="grid grid-cols-2 lg:grid-cols-4 gap-4 bg-white">
+						{/* Statistic Cards */}
+						<div className="border hover:bg-gray-200 cursor-pointer text-center md:py-20 md:px-20 py-10 px-10">
+							<i className="pi pi-camera font-bold text-purple-700 p-2 text-3xl"></i>
+							<p className="text-purple-700 md:text-3xl font-bold">
+								10,000,000+
+							</p>
+							<p className="mt-4 md:text-xl">Feet Pics Sold</p>
 						</div>
-						<div className="border hover:bg-gray-200 cursor-pointer border-l-gray-200 text-center md:py-20 md:px-20 py-10 px-10">
-							<img src="" alt="" />
-							<p className="text-purple-700 md:text-3xl font-bold">$80,000,000+</p>
-							<p className=" mt-4 text-xl">Money spent</p>
+						<div className="border hover:bg-gray-200 cursor-pointer text-center md:py-20 md:px-20 py-10 px-10">
+							<i className="pi pi-money-bill font-bold text-purple-700 p-2 text-3xl"></i>
+							<p className="text-purple-700 md:text-3xl font-bold">
+								$80,000,000+
+							</p>
+							<p className="mt-4 md:text-xl">Money Spent</p>
 						</div>
-						<div className="border hover:bg-gray-200 cursor-pointer border-l-gray-200 text-center md:py-20 md:px-20 py-10 px-10">
-							<img src="" alt="" />
-							<p className="text-purple-700 md:text-3xl font-bold">5,000,000+</p>
-							<p className=" mt-4 text-xl">Verified User</p>
+						<div className="border hover:bg-gray-200 cursor-pointer text-center md:py-20 md:px-20 py-10 px-10">
+							<i className="pi pi-user font-bold text-purple-700 p-2 text-3xl"></i>
+							<p className="text-purple-700 md:text-3xl font-bold">
+								5,000,000+
+							</p>
+							<p className="mt-4 md:text-xl">Verified Users</p>
 						</div>
-						<div className="border hover:bg-gray-200 cursor-pointer border-l-gray-200 text-center md:py-20 md:px-20 py-10 px-10">
-							<img src="" alt="" />
-							<p className="text-purple-700 md:text-3xl font-bold">5000+</p>
-							<p className=" mt-4 text-xl">5-Star Reviews</p>
+						<div className="border hover:bg-gray-200 cursor-pointer text-center md:py-20 md:px-20 py-10 px-10">
+							<i className="pi pi-star font-bold text-purple-700 p-2 text-3xl"></i>
+							<p className="text-purple-700 md:text-3xl font-bold">5,000+</p>
+							<p className="mt-4 md:text-xl">5-Star Reviews</p>
 						</div>
 					</div>
 				</div>
-			</div>
 
-			{/* second page */}
-			<div className="">
-				<HowItWorks />
-			</div>
-            {/* third */}
-            <div className="">
-				<Sellers />
-			</div>
+				{/* How It Works Section */}
+				<div className="mt-8">
+					<HowItWorks />
+				</div>
 
-            <div>
-                
-            </div>
+				{/* Sellers Section */}
+				<div className="mt-8">
+					<Sellers />
+				</div>
+			</div>
 		</>
 	);
 }
