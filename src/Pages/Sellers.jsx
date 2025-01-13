@@ -77,7 +77,7 @@ export default function Sellers() {
 				</ol>
 				<hr className="mt-4 h-4 w-full text-yellow-600" />
 
-				<div className="bg-black gap-10 mb-20 md:flex lg:flex justify-center place-items-center md:py-10 lg:py-10">
+				<div className="bg-black gap-10 pb-20 md:mb-20 md:flex lg:flex justify-center place-items-center md:py-10 lg:py-10">
 					<div className="md:p-4 lg:p-4 mb-2 px-4 py-6">
 						<ul className="list-disc text-white list-inside">
 							<li className="md:text-2xl lg:text-2xl font-medium mb-7">
@@ -122,7 +122,7 @@ export default function Sellers() {
 							</div>
 						</div>
 
-						<div className="flex items-center justify-center absolute border inset-0">
+						<div className="flex items-center justify-center absolute inset-0">
 							<div className="">
 								<p className="mt-10 mb-6 text-white text-[1.4rem] md:text-[2.8rem] text-center font-bold">
 									View Millions Of Verified Models
@@ -160,7 +160,7 @@ export default function Sellers() {
 							</div>
 						</div>
 
-						<div className="flex items-center justify-center absolute border inset-0">
+						<div className="flex items-center justify-center absolute inset-0">
 							<div className="">
 								<p className="mt-10 mb-6 text-white text-[1.4rem] md:text-[2.8rem] text-center font-bold">
 									View Millions Of foot fetish <br /> pictures and videos
