@@ -54,8 +54,8 @@ export default function BlogsSlider() {
 
 	const productTemplate = (product) => {
 		return (
-			<div className="flex mt-2 justify-center items-center">
-				<div className="md:w-[90%] rounded-3xl bg-white surface-border border-round m-2 text-center py-3 px-2">
+			<div className="flex mt-1 justify-center items-center">
+				<div className="md:w-[90%] rounded-3xl bg-yellow-600 surface-border border-round m-2 text-center py-3 px-2">
 					<div className="mb-3">
 						<img
 							src={`https://primefaces.org/cdn/primereact/images/product/${product.image}`}
@@ -64,8 +64,8 @@ export default function BlogsSlider() {
 						/>
 					</div>
 					<div className="text-left">
-						<h4 className="mb-1">{product.name}</h4>
-						<h6 className="mt-0 mb-3">${product.price}</h6>
+						<h4 className="mb-1 text-white">{product.name}</h4>
+						<h6 className="mt-0 mb-3 text-white">${product.price}</h6>
 						<Tag
 							value={product.inventoryStatus}
 							severity={getSeverity(product)}></Tag>
@@ -92,7 +92,7 @@ export default function BlogsSlider() {
 				numVisible={3}
 				numScroll={3}
 				responsiveOptions={responsiveOptions}
-				className="custom-carousel md:w-[70%] w-[35%] h-full lg:w-[90%]"
+				className="custom-carousel md:w-[70%] w-[35%] text-yellow-600 h-full lg:w-[90%]"
 				circular
 				autoplayInterval={3000}
 				itemTemplate={productTemplate}

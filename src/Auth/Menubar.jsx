@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { getAuth } from "firebase/auth";
 import app from "../../firebase/firebaseConfig"; // Import the initialized Firebase app
 import 'primeicons/primeicons.css';
+import MS from "../public/MSlogo.jpg";
 
 function Menubar() {
   const [isOpen, setIsOpen] = useState(false); // State to manage menu visibility
@@ -18,12 +19,12 @@ function Menubar() {
   }, []);
 
   return (
-    <div className="fixed top-0 w-full bg-purple-600 p-4 z-50">
+    <div className="fixed top-0 w-full bg-black p-4 z-50">
       {/* Hamburger Icon for Mobile */}
       <div className="flex items-center justify-between md:hidden">
-        <h1 className="lg:text-lg text-xl px-2 rounded-full font-poppins font-bold italic tracking-wide text-center text-pink-600">
-          Magnificent<br />Soles
-        </h1>
+        <div className="">
+                <img src={MS} className="w-24 h-14" alt="img" />
+              </div>
         <button
           onClick={() => setIsOpen(!isOpen)}
           className="text-white text-2xl"
@@ -34,32 +35,32 @@ function Menubar() {
 
       {/* Sidebar Menu */}
       <div
-        className={`fixed top-19.2 left-0 h-[40vh] md:h-[4vh] opacity-52 bg-purple-600 text-white w-full transform ${
+        className={`fixed top-19.2 left-0 h-[40vh] md:h-[4vh] opacity-52 bg-black text-white w-full transform ${
           isOpen ? "translate-x-0" : "-translate-x-full"
         } transition-transform duration-1000 md:static md:translate-x-0 md:flex md:w-full md:bg-transparent`}
       >
         <nav className="flex flex-col md:flex-row md:justify-around py-4 px-10 space-y-4 md:space-y-0">
-          <Link to="/" className="hover:text-gray-300 hover:bg-pink-400 py-3 pl-1 pr-9" onClick={() => setIsOpen(false)}>
+          <Link to="/" className="hover:text-gray-300 hover:bg-yellow-600 py-3 pl-1 pr-9" onClick={() => setIsOpen(false)}>
             Home
           </Link>
-          <Link to="/sellers" className="hover:text-gray-300 hover:bg-pink-400 py-1 pl-1 pr-9" onClick={() => setIsOpen(false)}>
+          <Link to="/sellers" className="hover:text-gray-300 hover:bg-yellow-600 py-1 pl-1 pr-9" onClick={() => setIsOpen(false)}>
             Sellers
           </Link>
-          <Link to="/how-it-works" className="hover:text-gray-300 hover:bg-pink-400 py-1 pl-1 pr-9" onClick={() => setIsOpen(false)}>
+          <Link to="/how-it-works" className="hover:text-gray-300 hover:bg-yellow-600 py-1 pl-1 pr-9" onClick={() => setIsOpen(false)}>
             How It Works
           </Link>
-          <Link to="/faq" className="hover:text-gray-300 hover:bg-pink-400 py-1 pl-1 pr-9" onClick={() => setIsOpen(false)}>
+          <Link to="/faq" className="hover:text-gray-300 hover:bg-yellow-600 py-1 pl-1 pr-9" onClick={() => setIsOpen(false)}>
             FAQ
           </Link>
-          <Link to="/blogs" className="hover:text-gray-300 hover:bg-pink-400 py-1 pl-1 pr-9" onClick={() => setIsOpen(false)}>
+          <Link to="/blogs" className="hover:text-gray-300 hover:bg-yellow-600 py-1 pl-1 pr-9" onClick={() => setIsOpen(false)}>
             Blogs
           </Link>
           {!user ? (
             <>
-              <Link to="/signup" className="hover:text-gray-300 hover:bg-pink-400 py-1 pl-1 pr-9" onClick={() => setIsOpen(false)}>
+              <Link to="/signup" className="hover:text-gray-300 hover:bg-yellow-600 py-1 pl-1 pr-9" onClick={() => setIsOpen(false)}>
                 Sign Up
               </Link>
-              <Link to="/login" className="hover:text-gray-300 hover:bg-pink-400 py-1 pl-1 pr-9" onClick={() => setIsOpen(false)}>
+              <Link to="/login" className="hover:text-gray-300 hover:bg-yellow-600 py-1 pl-1 pr-9" onClick={() => setIsOpen(false)}>
                 Login
               </Link>
             </>
@@ -71,7 +72,7 @@ function Menubar() {
                 auth.signOut(); // Sign out the user
                 setUser(null); // Clear the user state
               }}
-              className="hover:text-gray-300 hover:bg-pink-400 py-1 pl-1 pr-9"
+              className="hover:text-gray-300 hover:bg-yellow-600 py-1 pl-1 pr-9"
             >
               Logout
             </button>

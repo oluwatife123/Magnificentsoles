@@ -31,27 +31,27 @@ import Blogs from "./Blogs";
 export default function Sellers() {
 	return (
 		<>
-			<div className="bg-gray-300 h-[100%]">
+			<div className="bg-black h-[100%]">
 				{/* how it works */}
-				<div className="pt-5 ">
+				<div className="pt-5 text-white ">
 					<p className="mt-10 mb-6 md:text-[2.8rem] text-[1.4rem] text-center font-bold">
 						MEMBER FEATURES
 					</p>
 				</div>
 				{/* Buttons switch */}
 				<div className="flex place-items-center justify-center">
-					<div className="md:w-[25%] flex  md:gap-2 border bg-purple-600 py-2 px-2 rounded-full">
-						<div className="border border-white bg-[#ed3b59] rounded-full px-10 py-4">
+					<div className="md:w-[25%] flex  md:gap-2 border bg-white py-2 px-2 rounded-full">
+						<div className="border border-white bg-yellow-600 rounded-full px-10 py-4">
 							<a
 								href="#"
-								className="text-center text-white fonbold mt-4 lg:text-lg md:text-lg">
+								className="text-center text-black font-bold mt-4 lg:text-lg md:text-lg">
 								SELLERS
 							</a>
 						</div>
 						<div className=" rounded-full md:px-10 px-10 lg:px-10 py-4">
 							<a
 								href="#"
-								className="text-center text-white fonbold mt-4 lg:text-lg md:text-lg">
+								className="text-center text-black font-bold mt-4 lg:text-lg md:text-lg">
 								BUYERS
 							</a>
 						</div>
@@ -60,24 +60,24 @@ export default function Sellers() {
 				{/* list */}
 				<ol className="my-8 px-3 flex justify-center gap-10">
 					<a href="#">
-						<li className="text-gray-700 ml-5 md:ml-0 lg:text-2xl lg:m-0 font-normal md:text-2xl hover:text-purple-600 ">
+						<li className="text-white ml-5 md:ml-0 lg:text-2xl lg:m-0 font-normal md:text-2xl hover:text-yellow-600 ">
 							Payouts
 						</li>
 					</a>
 					<a href="#">
-						<li className="text-gray-700 font-normal lg:text-2xl md:text-2xl hover:text-purple-600 ">
+						<li className="text-white font-normal lg:text-2xl md:text-2xl hover:text-yellow-600 ">
 							custom offers
 						</li>
 					</a>
 					<a href="#">
-						<li className="text-gray-700 font-normal lg:text-2xl md:text-2xl hover:text-purple-600 ">
+						<li className="text-white font-normal lg:text-2xl md:text-2xl hover:text-yellow-600 ">
 							uploading content
 						</li>
 					</a>
 				</ol>
-				<hr className="mt-4 h-4 w-4 text-purple-500" />
+				<hr className="mt-4 h-4 w-full text-yellow-600" />
 
-				<div className="bg-purple-600 gap-10 mb-20 md:flex lg:flex justify-center place-items-center md:py-10 lg:py-10">
+				<div className="bg-black gap-10 mb-20 md:flex lg:flex justify-center place-items-center md:py-10 lg:py-10">
 					<div className="md:p-4 lg:p-4 mb-2 px-4 py-6">
 						<ul className="list-disc text-white list-inside">
 							<li className="md:text-2xl lg:text-2xl font-medium mb-7">
@@ -103,9 +103,9 @@ export default function Sellers() {
 			</div>
 
 			{/* verified model page */}
-			<div className=" ">
+			<div className="bg-black ">
 				<div className=" ">
-					<p className="mt-10 mb-6 text-[1.4rem] md:text-[2.8rem] text-center font-bold">
+					<p className="pt-10 mb-6 text-[1.4rem] text-white md:text-[2.8rem] text-center font-bold">
 						VERIFIED MODELS
 					</p>
 					
@@ -129,8 +129,8 @@ export default function Sellers() {
 								</p>
 								{/* button */}
 								<div className="flex items-center justify-center">
-									<button className="border border-white  bg-purple-600 px-10 md:px-20 py-5 rounded-full hover:bg-[#ed3b59]">
-										<a href="#" className="font-medium text-white">
+									<button className="border border-white  bg-yellow-600 px-10 md:px-20 py-5 rounded-full hover:bg-white">
+										<a href="#" className="font-medium text-white hover:text-black">
 											VIEW ALL SELLERS
 										</a>
 									</button>
@@ -142,9 +142,9 @@ export default function Sellers() {
 			</div>
 
 			{/* popular content page */}
-			<div className=" ">
+			<div className="bg-black ">
 				<div className=" ">
-					<p className="mt-10 mb-6 text-[1.4rem] md:text-[2.8rem] text-center font-bold">
+					<p className="pt-10 mb-6 text-[1.4rem] text-white md:text-[2.8rem] text-center font-bold">
 						POPULAR CONTENT
 					</p>
 					<div className="relative">
@@ -167,8 +167,8 @@ export default function Sellers() {
 								</p>
 								{/* button */}
 								<div className="flex items-center justify-center">
-									<button className="border border-white  bg-purple-600 px-10 md:px-20 py-5 rounded-full hover:bg-[#ed3b59]">
-										<a href="#" className="font-medium text-white">
+									<button className="border border-white  bg-yellow-600 px-10 md:px-20 py-5 rounded-full hover:bg-white">
+										<a href="#" className="font-medium text-white hover:text-black">
 											VIEW MORE CONTENT
 										</a>
 									</button>
@@ -180,11 +180,11 @@ export default function Sellers() {
 			</div>
 
 			{/* POPULAR CATEGORIES PAGES */}
-			<div className="">
+			<div className="bg-black">
 				<div className=" ">
 					{/* texts */}
 					<div className="">
-						<p className="mt-10 md:text-[2.8rem] text-[1.4rem] text-center font-bold">
+						<p className="pt-10 md:text-[2.8rem] text-white text-[1.4rem] text-center font-bold">
 							POPULAR CATEGORIES
 						</p>
 						<p className="pt-1 text-center text-[14px] md:text-2xl text-gray-400">
@@ -198,7 +198,7 @@ export default function Sellers() {
 					<div className="grid md:grid-cols-4 grid-cols-3 gap-6 mx-10 mt-10">
 						{/* A */}
 						<a href="#" className="">
-							<div className="border border-blue-400 hover:bg-purple-600 h-[18vh] md:h-[40vh] rounded-2xl">
+							<div className="border border-blue-400 hover:bg-yellow-200 h-[18vh] md:h-[40vh] rounded-2xl">
 								<img
 									src={hil}
 									className="w-full hover:bg-purple-400 hover:opacity-30 rounded-2xl h-full"
@@ -211,7 +211,7 @@ export default function Sellers() {
 						</a>
 						{/* B  */}
 						<a href="#" className="">
-							<div className="border border-blue-400 hover:bg-purple-600 h-[18vh] md:h-[40vh] rounded-2xl">
+							<div className="border border-blue-400 hover:bg-yellow-200 h-[18vh] md:h-[40vh] rounded-2xl">
 								<img
 									src={we}
 									className="w-full hover:bg-purple-400 hover:opacity-30 rounded-2xl h-full"
@@ -222,7 +222,7 @@ export default function Sellers() {
 						</a>
 						{/* C  */}
 						<a href="#" className="">
-							<div className="border border-blue-400 hover:bg-purple-600 h-[18vh] md:h-[40vh] rounded-2xl">
+							<div className="border border-blue-400 hover:bg-yellow-200 h-[18vh] md:h-[40vh] rounded-2xl">
 								<img
 									src={hi}
 									className="w-full hover:bg-purple-400 hover:opacity-30 rounded-2xl h-full"
@@ -235,7 +235,7 @@ export default function Sellers() {
 						</a>
 						{/* D  */}
 						<a href="#" className="">
-							<div className="border border-blue-400 hover:bg-purple-600 h-[18vh] md:h-[40vh] rounded-2xl">
+							<div className="border border-blue-400 hover:bg-yellow-200 h-[18vh] md:h-[40vh] rounded-2xl">
 								<img
 									src={am}
 									className="w-full hover:bg-purple-400 hover:opacity-30 rounded-2xl h-full"
@@ -249,7 +249,7 @@ export default function Sellers() {
 
 						{/* A */}
 						<a href="#" className="">
-							<div className="border border-blue-400 hover:bg-purple-600 h-[18vh] md:h-[40vh] rounded-2xl">
+							<div className="border border-blue-400 hover:bg-yellow-200 h-[18vh] md:h-[40vh] rounded-2xl">
 								<img
 									src={lo}
 									className="w-full hover:bg-purple-400 hover:opacity-30 rounded-2xl h-full"
@@ -260,7 +260,7 @@ export default function Sellers() {
 						</a>
 						{/* B  */}
 						<a href="#" className="">
-							<div className="border border-blue-400 hover:bg-purple-600 h-[18vh] md:h-[40vh] rounded-2xl">
+							<div className="border border-blue-400 hover:bg-yellow-200 h-[18vh] md:h-[40vh] rounded-2xl">
 								<img
 									src={pe}
 									className="w-full hover:bg-purple-400 hover:opacity-30 rounded-2xl h-full"
@@ -273,7 +273,7 @@ export default function Sellers() {
 						</a>
 						{/* C  */}
 						<a href="#" className="">
-							<div className="border border-blue-400 hover:bg-purple-600 h-[18vh] md:h-[40vh] rounded-2xl">
+							<div className="border border-blue-400 hover:bg-yellow-200 h-[18vh] md:h-[40vh] rounded-2xl">
 								<img
 									src={di}
 									className="w-full hover:bg-purple-400 hover:opacity-30 rounded-2xl h-full"
@@ -286,7 +286,7 @@ export default function Sellers() {
 						</a>
 						{/* D  */}
 						<a href="#" className="">
-							<div className="border border-blue-400 hover:bg-purple-600 h-[18vh] md:h-[40vh] rounded-2xl">
+							<div className="border border-blue-400 hover:bg-yellow-200 h-[18vh] md:h-[40vh] rounded-2xl">
 								<img
 									src={ma}
 									className="w-full hover:bg-purple-400 hover:opacity-30 rounded-2xl h-full"
@@ -300,7 +300,7 @@ export default function Sellers() {
 
 						{/* A */}
 						<a href="#" className="">
-							<div className="border border-blue-400 hover:bg-purple-600 h-[18vh] md:h-[40vh] rounded-2xl">
+							<div className="border border-blue-400 hover:bg-yellow-200 h-[18vh] md:h-[40vh] rounded-2xl">
 								<img
 									src={da}
 									className="w-full hover:bg-purple-400 hover:opacity-30 rounded-2xl h-full"
@@ -311,7 +311,7 @@ export default function Sellers() {
 						</a>
 						{/* B  */}
 						<a href="#" className="">
-							<div className="border border-blue-400 hover:bg-purple-600 h-[18vh] md:h-[40vh] rounded-2xl">
+							<div className="border border-blue-400 hover:bg-yellow-200 h-[18vh] md:h-[40vh] rounded-2xl">
 								<img
 									src={ta}
 									className="w-full hover:bg-purple-400 hover:opacity-30 rounded-2xl h-full"
@@ -322,7 +322,7 @@ export default function Sellers() {
 						</a>
 						{/* C  */}
 						<a href="#" className="">
-							<div className="border border-blue-400 hover:bg-purple-600 h-[18vh] md:h-[40vh] rounded-2xl">
+							<div className="border border-blue-400 hover:bg-yellow-200 h-[18vh] md:h-[40vh] rounded-2xl">
 								<img
 									src={sf}
 									className="w-full hover:bg-purple-400 hover:opacity-30 rounded-2xl h-full"
@@ -335,7 +335,7 @@ export default function Sellers() {
 						</a>
 						{/* D  */}
 						<a href="#" className="">
-							<div className="border border-blue-400 hover:bg-purple-600 h-[18vh] md:h-[40vh] rounded-2xl">
+							<div className="border border-blue-400 hover:bg-yellow-200 h-[18vh] md:h-[40vh] rounded-2xl">
 								<img
 									src={ny}
 									className="w-full hover:bg-purple-400 hover:opacity-30 rounded-2xl h-full"
@@ -346,10 +346,9 @@ export default function Sellers() {
 						</a>
 					</div>
 				</div>
-
 				{/* button  */}
-				<div className="flex items-center justify-center my-10">
-					<button className="border border-white  bg-purple-600 px-10 md:px-20 py-5 rounded-full hover:bg-[#ed3b59]">
+				<div className="flex items-center justify-center py-8">
+					<button className="border border-white  bg-yellow-600 px-10 md:px-20 py-5 rounded-full hover:bg-white">
 						<a href="#" className="font-medium text-white">
 							VIEW MORE CATEGORIES
 						</a>
@@ -358,13 +357,13 @@ export default function Sellers() {
 			</div>
 
 			{/* Free foot fetish pics pages  */}
-			<div className="bg-gray-300 h-full">
+			<div className="bg-black h-full">
 				{/* texts */}
 				<div className="pt-10">
-					<p className="md:mt-10 text-[1.6rem] md:text-[2.8rem] text-center font-bold">
+					<p className="md:mt-10 text-[1.6rem] text-white md:text-[2.8rem] text-center font-bold">
 						Free Foot Fetish Pics
 					</p>
-					<p className="pt-1 text-center text-[15px] md:text-2xl text-gray-400">
+					<p className="pt-1 px-2 text-center text-[15px] md:text-2xl text-gray-400">
 						Explore thousands of free feet pictures from ID-verified foot <br />
 						fetish models!
 					</p>
@@ -450,8 +449,8 @@ export default function Sellers() {
 				</div>
 				{/* fetish button */}
 				<div className="flex items-center justify-center py-10">
-					<button className="border border-white bg-purple-600 px-10 md:px-20 py-5 rounded-full hover:bg-[#ed3b59]">
-						<a href="#" className="font-medium text-white">
+					<button className="border  border-white bg-yellow-600 px-10 md:px-20 py-5 rounded-full hover:bg-white">
+						<a href="#" className="font-medium hover:text-black text-white">
 							VIEW FEET PICS
 						</a>
 					</button>
@@ -459,10 +458,10 @@ export default function Sellers() {
 			</div>
 
 			{/* how much your feet worth */}
-			<div className="">
+			<div className="bg-black">
 				{/* text div */}
 				<div className="">
-					<p className="mt-10 md:text-[2.8rem] text-[1.4rem] text-center font-bold">
+					<p className="mt-2 pt-3 text-white md:text-[2.8rem] text-[1.4rem] text-center font-bold">
 						How much your Feet Worth?
 					</p>
 					<div className="flex items-center justify-center">
@@ -478,8 +477,8 @@ export default function Sellers() {
 				<div className="border border-red-400 mx-40 py-24"></div>
 				{/* feet worth button */}
 				<div className="flex items-center justify-center py-10">
-					<button className="border border-white bg-purple-600 px-10 md:px-20 py-5 rounded-full hover:bg-[#ed3b59]">
-						<a href="#" className="font-medium text-white">
+					<button className="border border-white bg-yellow-600 px-10 md:px-20 py-5 rounded-full hover:bg-white">
+						<a href="#" className="font-medium hover:text-black text-white">
 							GET RESULTS
 						</a>
 					</button>
@@ -520,34 +519,34 @@ export default function Sellers() {
 			</div>
 
 			{/* What people are saying */}
-			<div className="">
-				<p className="mt-10 md:text-[2.8rem] text-[1.4rem] text-center font-bold">
+			<div className="bg-black">
+				<p className="pt-10 md:text-[2.8rem] text-white text-[1.4rem] text-center font-bold">
 					WHAT PEOPLE ARE SAYING
 				</p>
 
 				<div className="flex items-center justify-center mt-2">
 					<div className="flex gap-1">
-						<i className="pi pi-star font-bold text-2xl text-green-800"></i>
-						<p className="font-semibold text-lg">Trustpilot</p>
+						<i className="pi pi-star font-bold text-2xl text-yellow-800"></i>
+						<p className="font-semibold text-white text-lg">Trustpilot</p>
 					</div>
 				</div>
 				<div className="flex items-center justify-center my-2">
 					<div className="flex gap-1">
-						<i className="pi pi-star font-bold text-2xl bg-green-500 text-white"></i>
-						<i className="pi pi-star font-bold text-2xl bg-green-500 text-white"></i>
-						<i className="pi pi-star font-bold text-2xl bg-green-500 text-white"></i>
-						<i className="pi pi-star font-bold text-2xl bg-green-500 text-white"></i>
+						<i className="pi pi-star font-bold text-2xl bg-yellow-500 text-white"></i>
+						<i className="pi pi-star font-bold text-2xl bg-yellow-500 text-white"></i>
+						<i className="pi pi-star font-bold text-2xl bg-yellow-500 text-white"></i>
+						<i className="pi pi-star font-bold text-2xl bg-yellow-500 text-white"></i>
 						<i className="pi pi-star font-bold text-2xl bg-gray-500 text-white"></i>
 					</div>
 				</div>
 				<div className="flex items-center justify-center my-2">
-					<p className="text-[14px]">
-						Trust Score <span className="font-bold">4.1</span>|{" "}
-						<span className="underline">3,575 reviews</span>{" "}
+					<p className="text-[14px] text-white">
+						Trust Score <span className="font-bold text-white">4.1</span>|{" "}
+						<span className="underline text-white">3,575 reviews</span>{" "}
 					</p>
 				</div>
 				{/* slider path */}
-				<div className="">
+				<div className="text-white pb-3">
 					<TextSlider />
 				</div>
 			</div>

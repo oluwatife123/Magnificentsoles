@@ -12,11 +12,11 @@ export default function HomePage() {
 		<>
 			<div className="w-full overflow-x-hidden">
 				{/* Hero Section */}
-				<div className="bg-purple-600 lg:flex md:flex pt-6 pb-4">
+				<div className="bg-black lg:flex md:flex pt-6 pb-4">
 					<div className="md:ml-10 lg:ml-10 sm:ml-9 px-3 lg:w-[40%] sm:w-[90%] md:w-[90%]">
 						{/* Hero Text */}
 						<div className="text-white mt-20">
-							<p className="md:text-[2.2rem] text-[1.9rem] font-bold">
+							<p className="md:text-[1.2rem]  text-[1.9rem] font-bold">
 								View, Buy & Sell Feet Pics
 							</p>
 							<p className="md:text-[1.6rem] text-[1rem] mt-3 md:mt-4">
@@ -29,13 +29,13 @@ export default function HomePage() {
 
 						{/* Buttons */}
 						<div className="flex gap-4 w-full mt-5">
-							<button className="px-4 py-3 w-full md:w-1/2 bg-pink-600 hover:shadow-xl rounded-full">
-								<p className="text-white font-bold md:text-xl">
+							<button className="px-4 py-3 w-full md:w-1/2 bg-yellow-600 hover:bg-white  rounded-full">
+								<p className="text-white hover:text-black font-bold md:text-xl">
 									View/Buy Feet Pics
 								</p>
 							</button>
-							<button className="px-4 py-3 w-full md:w-1/2 bg-pink-600 hover:shadow-xl rounded-full">
-								<p className="text-white font-bold md:text-xl">
+							<button className="px-4 py-3 w-full md:w-1/2 bg-yellow-600 hover:bg-white  rounded-full">
+								<p className="text-white hover:text-black font-bold md:text-xl">
 									Sell Feet Pics
 								</p>
 							</button>
@@ -79,30 +79,30 @@ export default function HomePage() {
 					<div className="grid grid-cols-2 lg:grid-cols-4 gap-4 bg-white">
 						{/* Statistic Cards */}
 						<div className="border hover:bg-gray-200 cursor-pointer text-center md:py-20 md:px-20 py-10 px-10">
-							<i className="pi pi-camera font-bold text-purple-700 p-2 text-3xl"></i>
-							<p className="text-purple-700 md:text-3xl font-bold">
+							<i className="pi pi-camera font-bold text-yellow-600 p-2 text-3xl"></i>
+							<p className="text-yellow-700 md:text-3xl font-bold">
 								10,000,000+
 							</p>
-							<p className="mt-4 md:text-xl">Feet Pics Sold</p>
+							<p className="mt-4 md:text-xl text-yellow-600">Feet Pics Sold</p>
 						</div>
 						<div className="border hover:bg-gray-200 cursor-pointer text-center md:py-20 md:px-20 py-10 px-10">
-							<i className="pi pi-money-bill font-bold text-purple-700 p-2 text-3xl"></i>
-							<p className="text-purple-700 md:text-3xl font-bold">
+							<i className="pi pi-money-bill font-bold text-yellow-600 p-2 text-3xl"></i>
+							<p className="text-yellow-600 md:text-3xl font-bold">
 								$80,000,000+
 							</p>
-							<p className="mt-4 md:text-xl">Money Spent</p>
+							<p className="mt-4 md:text-xl text-yellow-600">Money Spent</p>
 						</div>
 						<div className="border hover:bg-gray-200 cursor-pointer text-center md:py-20 md:px-20 py-10 px-10">
-							<i className="pi pi-user font-bold text-purple-700 p-2 text-3xl"></i>
-							<p className="text-purple-700 md:text-3xl font-bold">
+							<i className="pi pi-user font-bold text-yellow-600 p-2 text-3xl"></i>
+							<p className="text-yellow-600 md:text-3xl font-bold">
 								5,000,000+
 							</p>
-							<p className="mt-4 md:text-xl">Verified Users</p>
+							<p className="mt-4 md:text-xl text-yellow-600">Verified Users</p>
 						</div>
 						<div className="border hover:bg-gray-200 cursor-pointer text-center md:py-20 md:px-20 py-10 px-10">
-							<i className="pi pi-star font-bold text-purple-700 p-2 text-3xl"></i>
-							<p className="text-purple-700 md:text-3xl font-bold">5,000+</p>
-							<p className="mt-4 md:text-xl">5-Star Reviews</p>
+							<i className="pi pi-star font-bold text-yellow-600 p-2 text-3xl"></i>
+							<p className="text-yellow-600 md:text-3xl font-bold">5,000+</p>
+							<p className="mt-4 md:text-xl text-yellow-600">5-Star Reviews</p>
 						</div>
 					</div>
 				</div>
