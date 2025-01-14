@@ -10,7 +10,7 @@ import SignUp from "../Auth/SignUp";
 export default function HomePage() {
 	return (
 		<>
-			<div className="w-full overflow-x-hidden">
+			<div className="w-full bg-black overflow-x-hidden">
 				{/* Hero Section */}
 				<div className="bg-black lg:flex md:flex pt-6 pb-4">
 					<div className="md:ml-10 lg:ml-10 sm:ml-9 px-3 lg:w-[40%] sm:w-[90%] md:w-[90%]">
@@ -20,9 +20,9 @@ export default function HomePage() {
 								View, Buy & Sell Feet Pics
 							</p>
 							<p className="md:text-[1.6rem] text-[1rem] mt-3 md:mt-4">
-								FeetFinder is the safest, largest, and easiest website to view,
+								MagnificentSoles is the safest, largest, and easiest website to view,
 								buy and sell feet content. With millions of users and over 5,000
-								five-star reviews, FeetFinder is the best website for anyone
+								five-star reviews, magnificentSoles is the best website for anyone
 								interested in buying or selling feet content.
 							</p>
 						</div>

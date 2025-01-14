@@ -17,7 +17,7 @@ export default function Footer() {
 
 							<div className="">
 								<p className="text-sm">
-									FeetFinder is the most convenient website for verified users
+									MagnificentSoles is the most convenient website for verified users
 									to buy or sell custom foot content in a safe and secure
 									environment.
 								</p>

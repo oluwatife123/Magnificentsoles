@@ -535,15 +535,15 @@ export default function Sellers() {
 						<div className="flex items-center justify-center absolute inset-0">
 							<div className="px-8">
 								<p className="mt-10 mb-2 text-white text-[1.4rem] md:text-[2.8rem] text-left font-bold">
-									IS FEETFINDER SAFE?
+									IS MAGNIFICENTSOLES SAFE?
 								</p>
 								<p className="mt-2 mb-6 text-white md:text-[1.6rem] xl:w-[50%] lg:w-[100%] text-[13px] sm:text-[1.4rem] md:w-[100%] text-left font-bold">
-									FeetFinder is the safest and most secure website to buy and
+									MagnificentSoles is the safest and most secure website to buy and
 									sell feet content. Encrypted servers, PCI-compliant security
 									and third party firewall ensures your data and card info
 									remains hidden and safe from potential threats. No other
 									websites to sell feet pics offer the same level of security
-									and have the track record of FeetFinder.
+									and have the track record of MagnificentSoles.
 								</p>
 							</div>
 						</div>
