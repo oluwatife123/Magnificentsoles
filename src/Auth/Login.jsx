@@ -44,12 +44,12 @@ const Login = () => {
 	};
 
 	return (
-		<div className="">
-			<div className="mt-20">
-				<img src={MS} alt="img" />
+		<div className="bg-black md:flex lg:flex lg:w-[100%]">
+			<div className="mt-20 md:w-[50%] lg:mt-10 md:mt-36 lg:w-[50%] lg:h-[50vh] md:h-[50vh]">
+				<img src={MS} className="px-4"  alt="img" />
 			</div>
 
-			<div className="flex items-center justify-center md:min-h-screen bg-black">
+			<div className="flex items-center justify-center md:min-h-screen md:w-[50%] lg:w-[50%]">
 				<ToastContainer />
 				<div className="w-full max-w-md p-6 bg-white mx-3 rounded-lg shadow-lg">
 					<h2 className="text-3xl text-center font-bold text-gray-800">
@@ -86,16 +86,17 @@ const Login = () => {
 						</div>
 						<button
 							type="submit"
-							className="w-full py-2 border border-yellow-600 bg-yellow-600 text-purple-60 rounded-md hover:text-black hover:bg-white">
+							className="w-full py-2 border border-yellow-600 bg-yellow-600 text-white rounded-md hover:text-black hover:bg-white">
 							Log In
 						</button>
+					
 					</form>
 					<div className="mt-4 text-center">
 						<span className="text-sm text-gray-600">
 							Don't have an account?{" "}
 						</span>
 						<button
-							className="text-blue-500 hover:underline"
+							className="text-yellow-600 hover:underline"
 							onClick={() => navigate("/signup")}>
 							Sign up
 						</button>

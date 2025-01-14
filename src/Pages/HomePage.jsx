@@ -16,7 +16,7 @@ export default function HomePage() {
 					<div className="md:ml-10 lg:ml-10 sm:ml-9 px-3 lg:w-[40%] sm:w-[90%] md:w-[90%]">
 						{/* Hero Text */}
 						<div className="text-white mt-20">
-							<p className="md:text-[1.2rem]  text-[1.9rem] font-bold">
+							<p className="md:text-[2.2rem]  text-[1.9rem] font-bold">
 								View, Buy & Sell Feet Pics
 							</p>
 							<p className="md:text-[1.6rem] text-[1rem] mt-3 md:mt-4">
@@ -56,7 +56,7 @@ export default function HomePage() {
 					</div>
 
 					{/* Hero Images */}
-					<div className="md:w-[60%] md:flex lg:flex gap-10">
+					<div className="md:w-[60%] lg:mt-10 md:flex lg:flex gap-10">
 						<div className="w-[35%]">
 							<img
 								src={banner}

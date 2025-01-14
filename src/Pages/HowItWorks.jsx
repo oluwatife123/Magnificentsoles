@@ -1,12 +1,14 @@
 import React from "react";
+import Menubar from "../Auth/Menubar";
 
 export default function HowItWorks() {
 	return (
 		<>
+		<Menubar />
 			<div className="bg-black">
 				<p className="md:mt-10 lg:mt-10 lg:text-[2.8rem] pt-8 md:text-[2.8rem] text-[1.4rem] text-center font-bold text-white">HOW IT WORKS</p>
 				{/* how it works attribute */}
-				<div className="">
+				<div className=" ">
 					<div className=" md:h-[50vh] lg:h-[100vh] sm:h-[50vh] h-[37vh] px-3 flex justify-center place-items-center">
 						<div className="relative md:w-[80%] w-[100%]">
 							{/* Image container */}

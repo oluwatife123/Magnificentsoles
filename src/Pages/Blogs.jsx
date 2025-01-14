@@ -1,10 +1,12 @@
 import React from "react";
 import BlogsSlider from "../components/BlogsSlider";
+import Menubar from "../Auth/Menubar";
 
 export default function Blogs() {
 	return (
 		<>
-			<div className="border flex justify-center items-center bg-black mt-4">
+		<Menubar />
+			<div className=" flex justify-center items-center bg-black mt-4">
 			<div className="">
 				{/* text */}
 				<div className="">
