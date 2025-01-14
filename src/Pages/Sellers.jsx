@@ -134,10 +134,10 @@ export default function Sellers() {
 									</p>
 									{/* button */}
 									<div className="flex items-center justify-center">
-										<button className="border border-white  bg-yellow-600 px-10 md:px-20 py-5 rounded-full hover:bg-white">
+										<button className="border text-white hover:text-black border-white  bg-yellow-600 px-10 md:px-20 py-5 rounded-full hover:bg-white">
 											<a
 												href="#"
-												className="font-medium text-white hover:text-black">
+												className="font-medium ">
 												VIEW ALL SELLERS
 											</a>
 										</button>
@@ -174,10 +174,10 @@ export default function Sellers() {
 									</p>
 									{/* button */}
 									<div className="flex items-center justify-center">
-										<button className="border border-white  bg-yellow-600 px-10 md:px-20 py-5 rounded-full hover:bg-white">
+										<button className="border text-white hover:text-black border-white  bg-yellow-600 px-10 md:px-20 py-5 rounded-full hover:bg-white">
 											<a
 												href="#"
-												className="font-medium text-white hover:text-black">
+												className="font-medium ">
 												VIEW MORE CONTENT
 											</a>
 										</button>
@@ -365,8 +365,8 @@ export default function Sellers() {
 					</div>
 					{/* button  */}
 					<div className="flex items-center justify-center py-8">
-						<button className="border border-white  bg-yellow-600 px-10 md:px-20 py-5 rounded-full hover:bg-white">
-							<a href="#" className="font-medium text-white">
+						<button className="border border-white text-white hover:text-black bg-yellow-600 px-10 md:px-20 py-5 rounded-full hover:bg-white">
+							<a href="#" className="font-medium ">
 								VIEW MORE CATEGORIES
 							</a>
 						</button>
@@ -480,8 +480,8 @@ export default function Sellers() {
 					</div>
 					{/* fetish button */}
 					<div className="flex items-center justify-center py-10">
-						<button className="border  border-white bg-yellow-600 px-10 md:px-20 py-5 rounded-full hover:bg-white">
-							<a href="#" className="font-medium hover:text-black text-white">
+						<button className="border hover:text-black text-white  border-white bg-yellow-600 px-10 md:px-20 py-5 rounded-full hover:bg-white">
+							<a href="#" className="font-medium ">
 								VIEW FEET PICS
 							</a>
 						</button>
@@ -509,8 +509,8 @@ export default function Sellers() {
 					<div className="border border-red-400 mx-40 py-24"></div>
 					{/* feet worth button */}
 					<div className="flex items-center justify-center py-10">
-						<button className="border border-white bg-yellow-600 px-10 md:px-20 py-5 rounded-full hover:bg-white">
-							<a href="#" className="font-medium hover:text-black text-white">
+						<button className="border border-white hover:text-black text-white bg-yellow-600 px-10 md:px-20 py-5 rounded-full hover:bg-white">
+							<a href="#" className="font-medium ">
 								GET RESULTS
 							</a>
 						</button>

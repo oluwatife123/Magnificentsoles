@@ -29,13 +29,13 @@ export default function HomePage() {
 
 						{/* Buttons */}
 						<div className="flex gap-4 w-full mt-5">
-							<button className="px-4 py-3 w-full md:w-1/2 bg-yellow-600 hover:bg-white  rounded-full">
-								<p className="text-white hover:text-black font-bold md:text-xl">
+							<button className="px-4 text-white hover:text-black py-3 w-full md:w-1/2 bg-yellow-600 hover:bg-white  rounded-full">
+								<p className=" font-bold md:text-xl">
 									View/Buy Feet Pics
 								</p>
 							</button>
-							<button className="px-4 py-3 w-full md:w-1/2 bg-yellow-600 hover:bg-white  rounded-full">
-								<p className="text-white hover:text-black font-bold md:text-xl">
+							<button className="px-4 py-3 text-white hover:text-black w-full md:w-1/2 bg-yellow-600 hover:bg-white  rounded-full">
+								<p className=" font-bold md:text-xl">
 									Sell Feet Pics
 								</p>
 							</button>
