@@ -18,16 +18,25 @@ export default function Footer() {
 						</p>
 					</div>
 
-                    {/* links */}
-                    <div className=" ">
-                        <i className="pi pi-twitter p-2 rounded-full text-yellow-600 mr-1 font-semibold border border-yellow-600 hover:text-white hover:border-white"></i>
-                        <i className="pi pi-instagram p-2 rounded-full text-yellow-600 mr-1 font-semibold border border-yellow-600 hover:text-white hover:border-white"></i>
-                        <i className="pi pi-youtube p-2 rounded-full text-yellow-600 mr-1 font-semibold border border-yellow-600 hover:text-white hover:border-white"></i>
-                        <i className="pi pi-facebook p-2 rounded-full text-yellow-600 mr-1 font-semibold border border-yellow-600 hover:text-white hover:border-white"></i>
-                        <i className="pi pi-tiktok p-2 rounded-full text-yellow-600 font-semibold border border-yellow-600 hover:text-white hover:border-white"></i>
-                        
+					{/* links */}
+					<div className=" ">
+						<a href="https://x.com/i/flow/login">
+							<i className="pi pi-twitter p-2 rounded-full text-yellow-600 mr-1 font-semibold border border-yellow-600 hover:text-white hover:border-white"></i>
+						</a>
 
-                    </div>
+						<a href="https://www.instagram.com/accounts/login/?hl=en">
+							<i className="pi pi-instagram p-2 rounded-full text-yellow-600 mr-1 font-semibold border border-yellow-600 hover:text-white hover:border-white"></i>
+						</a>
+						<a href="https://www.youtube.com/">
+							<i className="pi pi-youtube p-2 rounded-full text-yellow-600 mr-1 font-semibold border border-yellow-600 hover:text-white hover:border-white"></i>
+						</a>
+						<a href="https://www.facebook.com/">
+							<i className="pi pi-facebook p-2 rounded-full text-yellow-600 mr-1 font-semibold border border-yellow-600 hover:text-white hover:border-white"></i>
+						</a>
+						<a href="https://www.tiktok.com/login">
+							<i className="pi pi-tiktok p-2 rounded-full text-yellow-600 font-semibold border border-yellow-600 hover:text-white hover:border-white"></i>
+						</a>
+					</div>
 				</div>
 			</div>
 		</>
