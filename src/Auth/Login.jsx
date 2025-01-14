@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import app from "../../firebase/firebaseConfig"; // Import the initialized Firebase app
+import Footer from "../components/Footer";
 
 const Login = () => {
 	const [email, setEmail] = useState("");
@@ -44,7 +45,9 @@ const Login = () => {
 	};
 
 	return (
-		<div className="bg-black md:flex lg:flex lg:w-[100%]">
+		<>
+		<div className="bg-black">
+		<div className=" md:flex lg:flex lg:w-[100%]">
 			<div className="mt-20 md:w-[50%] lg:mt-10 md:mt-36 lg:w-[50%] lg:h-[50vh] md:h-[50vh]">
 				<img src={MS} className="px-4"  alt="img" />
 			</div>
@@ -104,6 +107,9 @@ const Login = () => {
 				</div>
 			</div>
 		</div>
+		<Footer />
+		</div>
+		</>
 	);
 };
 

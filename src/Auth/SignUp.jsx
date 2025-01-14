@@ -3,6 +3,7 @@ import MS from "../public/MSlogo.jpg";
 import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
 import app from "../../firebase/firebaseConfig"; // Import the initialized Firebase app
+import Footer from "../components/Footer";
 
 const SignUp = () => {
 	const [email, setEmail] = useState("");
@@ -80,6 +81,8 @@ const SignUp = () => {
 					</div>
 				</div>
 			</div>
+
+			<Footer />
 		</div>
 	);
 };

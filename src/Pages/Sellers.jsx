@@ -556,27 +556,30 @@ export default function Sellers() {
 						WHAT PEOPLE ARE SAYING
 					</p>
 
-					<div className="flex items-center justify-center mt-2">
-						<div className="flex gap-1">
-							<i className="pi pi-star font-bold text-2xl text-yellow-800"></i>
-							<p className="font-semibold text-white text-lg">Trustpilot</p>
+					<div className="">
+						<div className="flex items-center justify-center mt-2">
+							<div className="flex gap-1">
+								<i className="pi pi-star font-bold text-2xl text-yellow-800"></i>
+								<p className="font-semibold text-white text-lg">Trustpilot</p>
+							</div>
+						</div>
+						<div className="flex items-center justify-center my-2">
+							<div className="flex gap-1">
+								<i className="pi pi-star font-bold text-2xl bg-yellow-500 text-white"></i>
+								<i className="pi pi-star font-bold text-2xl bg-yellow-500 text-white"></i>
+								<i className="pi pi-star font-bold text-2xl bg-yellow-500 text-white"></i>
+								<i className="pi pi-star font-bold text-2xl bg-yellow-500 text-white"></i>
+								<i className="pi pi-star font-bold text-2xl bg-gray-500 text-white"></i>
+							</div>
+						</div>
+						<div className="flex items-center justify-center my-2">
+							<p className="text-[14px] text-white">
+								Trust Score <span className="font-bold text-white">4.1</span>|{" "}
+								<span className="underline text-white">3,575 reviews</span>{" "}
+							</p>
 						</div>
 					</div>
-					<div className="flex items-center justify-center my-2">
-						<div className="flex gap-1">
-							<i className="pi pi-star font-bold text-2xl bg-yellow-500 text-white"></i>
-							<i className="pi pi-star font-bold text-2xl bg-yellow-500 text-white"></i>
-							<i className="pi pi-star font-bold text-2xl bg-yellow-500 text-white"></i>
-							<i className="pi pi-star font-bold text-2xl bg-yellow-500 text-white"></i>
-							<i className="pi pi-star font-bold text-2xl bg-gray-500 text-white"></i>
-						</div>
-					</div>
-					<div className="flex items-center justify-center my-2">
-						<p className="text-[14px] text-white">
-							Trust Score <span className="font-bold text-white">4.1</span>|{" "}
-							<span className="underline text-white">3,575 reviews</span>{" "}
-						</p>
-					</div>
+
 					{/* slider path */}
 					<div className="text-white pb-3">
 						<TextSlider />
@@ -598,11 +601,11 @@ export default function Sellers() {
 							</p>
 
 							<div className="flex items-center justify-center lg:justify-left">
-							<button className="border mt-5 border-white text-white hover:text-black bg-yellow-600 px-10 md:px-20 py-5 rounded-full hover:bg-white">
-								<a href="#" className="font-medium">
-									LEARN MORE
-								</a>
-							</button>
+								<button className="border mt-5 border-white text-white hover:text-black bg-yellow-600 px-10 md:px-20 py-5 rounded-full hover:bg-white">
+									<a href="#" className="font-medium">
+										LEARN MORE
+									</a>
+								</button>
 							</div>
 						</div>
 					</div>
@@ -616,7 +619,6 @@ export default function Sellers() {
 				{/* footer */}
 				<div className="">
 					<Footer />
-
 				</div>
 			</div>
 		</>
