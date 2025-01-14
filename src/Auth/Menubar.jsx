@@ -33,7 +33,7 @@ function Menubar() {
 				</div>
 				<button
 					onClick={() => setIsOpen(!isOpen)}
-					className="text-white text-2xl">
+					className="text-yellow-600 text-2xl">
 					<i className={`pi ${isOpen ? "pi-times" : "pi-bars"}`}></i>
 				</button>
 			</div>

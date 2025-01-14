@@ -29,6 +29,8 @@ import SE from "../public/securitybg.jpg";
 import Blogs from "./Blogs";
 
 import MS from "../public/MSlogo.jpg";
+import Asset from "../public/Asset.png";
+import Footer from "../components/Footer";
 
 export default function Sellers() {
 	return (
@@ -135,9 +137,7 @@ export default function Sellers() {
 									{/* button */}
 									<div className="flex items-center justify-center">
 										<button className="border text-white hover:text-black border-white  bg-yellow-600 px-10 md:px-20 py-5 rounded-full hover:bg-white">
-											<a
-												href="#"
-												className="font-medium ">
+											<a href="#" className="font-medium ">
 												VIEW ALL SELLERS
 											</a>
 										</button>
@@ -146,7 +146,7 @@ export default function Sellers() {
 							</div>
 						</div>
 					</div>
-				</div>		
+				</div>
 
 				{/* popular content page */}
 				<div className="bg-black ">
@@ -175,9 +175,7 @@ export default function Sellers() {
 									{/* button */}
 									<div className="flex items-center justify-center">
 										<button className="border text-white hover:text-black border-white  bg-yellow-600 px-10 md:px-20 py-5 rounded-full hover:bg-white">
-											<a
-												href="#"
-												className="font-medium ">
+											<a href="#" className="font-medium ">
 												VIEW MORE CONTENT
 											</a>
 										</button>
@@ -588,6 +586,37 @@ export default function Sellers() {
 				{/* blogs */}
 				<div>
 					<Blogs />
+				</div>
+
+				{/* Ready for foot and tips */}
+				<div className="md:flex lg:flex block justify-center items-center bg-black mt-7">
+					{/* text */}
+					<div className="flex justify-center items-center lg:justify-left">
+						<div className="lg:ml-10 ">
+							<p className="mt-5 mx-3  md:text-[2.8rem] lg:w-[70%] text-white text-center text-[1.4rem] lg:text-left md:text-left font-bold">
+								READY FOR FOOT FETISH ADVICE AND TIPS TO BE SUCCESSFUL?
+							</p>
+
+							<div className="flex items-center justify-center lg:justify-left">
+							<button className="border mt-5 border-white text-white hover:text-black bg-yellow-600 px-10 md:px-20 py-5 rounded-full hover:bg-white">
+								<a href="#" className="font-medium">
+									LEARN MORE
+								</a>
+							</button>
+							</div>
+						</div>
+					</div>
+
+					{/* image */}
+					<div className="mx-3 lg:mr-10 mt-2">
+						<img src={Asset} alt="Asset" />
+					</div>
+				</div>
+
+				{/* footer */}
+				<div className="">
+					<Footer />
+
 				</div>
 			</div>
 		</>
