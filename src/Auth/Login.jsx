@@ -4,7 +4,7 @@ import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import app from "../../firebase/firebaseConfig"; // Import the initialized Firebase app
+import app from "../firebase/firebaseConfig"; // Import the initialized Firebase app
 import Footer from "../components/Footer";
 
 const Login = () => {

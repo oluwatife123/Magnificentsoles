@@ -1,4 +1,3 @@
-// Import the necessary functions from Firebase SDK
 import { initializeApp } from "firebase/app";
 
 // Your Firebase configuration object

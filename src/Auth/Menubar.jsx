@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { getAuth } from "firebase/auth";
-import app from "../../firebase/firebaseConfig"; // Import the initialized Firebase app
+import app from "../firebase/firebaseConfig"; // Import the initialized Firebase app
 import "primeicons/primeicons.css";
 import MS from "../public/MSlogo.jpg";
 
