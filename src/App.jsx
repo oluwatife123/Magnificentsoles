@@ -12,34 +12,91 @@ import ProtectedRoute from "./components/ProtectedRoute"; // Import ProtectedRou
 import UploadPicture from "./components/UploadPicture";
 import ViewPictures from "./components/ViewPictures";
 import PicturesManager from "./components/PicturesManager";
+import FadeLoader from "react-spinners/FadeLoader";
+import { useState,useEffect } from "react";
+
 
 const App = () => {
-  return (
-    <>
-    <Router>
-      <Menubar />
-      <Routes>
-        <Route path="/login" element={<Login />} />
-        <Route path="/signup" element={<SignUp />} />
+	const [loading, setloading] = useState(false);
+	useEffect(() => {
+		setloading(true);
+		setTimeout(() => {
+			setloading(false);
+		}, 2000);
+	}, []);
+	return (
+		<>
+			<div className="">
+				{loading ? (
+					<div className="bg-[#000000e2] flex justify-center place-items-center h-[100vh] w-[100vw]">
+						<FadeLoader
+							className=""
+							color={"#CA8A04"}
+							loading={loading}
+							size={60}
+							aria-label="Loading Spinner"
+							data-testid="loader"
+						/>
+					</div>
+				) : (
+					<div className="">
+						<Router>
+							<Menubar />
+							<Routes>
+								<Route path="/login" element={<Login />} />
+								<Route path="/signup" element={<SignUp />} />
 
-        {/* Protect these routes */}
-        <Route path="/" element={<ProtectedRoute><HomePage /></ProtectedRoute>} />
-        <Route path="/sellers" element={<ProtectedRoute><Sellers /></ProtectedRoute>} />
-        <Route path="/how-it-works" element={<ProtectedRoute><HowItWorks /></ProtectedRoute>} />
-        <Route path="/faq" element={<ProtectedRoute><FAQ /></ProtectedRoute>} />
-        <Route path="/blogs" element={<ProtectedRoute><Blogs /></ProtectedRoute>} />
-        <Route path="/view" element={<ViewPictures /> }/>
-        <Route path="/manager" element={<PicturesManager /> }/>
-        <Route path="/upload" element={<UploadPicture />} />
-      </Routes>
-    </Router>
-    <div className="">
-     
-      
-
-    </div>
-    </>
-  );
+								{/* Protect these routes */}
+								<Route
+									path="/"
+									element={
+										<ProtectedRoute>
+											<HomePage />
+										</ProtectedRoute>
+									}
+								/>
+								<Route
+									path="/sellers"
+									element={
+										<ProtectedRoute>
+											<Sellers />
+										</ProtectedRoute>
+									}
+								/>
+								<Route
+									path="/how-it-works"
+									element={
+										<ProtectedRoute>
+											<HowItWorks />
+										</ProtectedRoute>
+									}
+								/>
+								<Route
+									path="/faq"
+									element={
+										<ProtectedRoute>
+											<FAQ />
+										</ProtectedRoute>
+									}
+								/>
+								<Route
+									path="/blogs"
+									element={
+										<ProtectedRoute>
+											<Blogs />
+										</ProtectedRoute>
+									}
+								/>
+								<Route path="/view" element={<ViewPictures />} />
+								<Route path="/manager" element={<PicturesManager />} />
+								<Route path="/upload" element={<UploadPicture />} />
+							</Routes>
+						</Router>
+					</div>
+				)}
+			</div>
+		</>
+	);
 };
 
 export default App;
