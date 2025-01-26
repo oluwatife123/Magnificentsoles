@@ -86,31 +86,31 @@ export default function HomePage() {
 				</div>
 
 				{/* Stats Section */}
-				<div className="mx-3">
-					<div className="grid grid-cols-2 lg:grid-cols-4 gap-4 bg-white">
+				<div className="mx-3 bg-black">
+					<div className="grid grid-cols-2 lg:grid-cols-4 gap-4 ">
 						{/* Statistic Cards */}
-						<div className="border hover:bg-gray-200 cursor-pointer text-center md:py-20 md:px-20 py-10 px-10">
+						<div className="border bg-white hover:bg-gray-200 cursor-pointer text-center md:py-20 md:px-20 py-10 px-10">
 							<i className="pi pi-camera font-bold text-yellow-600 p-2 text-3xl"></i>
 							<p className="text-yellow-700 md:text-3xl font-bold">
 								10,000,000+
 							</p>
 							<p className="mt-4 md:text-xl text-yellow-600">Feet Pics Sold</p>
 						</div>
-						<div className="border hover:bg-gray-200 cursor-pointer text-center md:py-20 md:px-20 py-10 px-10">
+						<div className="border bg-white hover:bg-gray-200 cursor-pointer text-center md:py-20 md:px-20 py-10 px-10">
 							<i className="pi pi-money-bill font-bold text-yellow-600 p-2 text-3xl"></i>
 							<p className="text-yellow-600 md:text-3xl font-bold">
 								$80,000,000+
 							</p>
 							<p className="mt-4 md:text-xl text-yellow-600">Money Spent</p>
 						</div>
-						<div className="border hover:bg-gray-200 cursor-pointer text-center md:py-20 md:px-20 py-10 px-10">
+						<div className="border bg-white hover:bg-gray-200 cursor-pointer text-center md:py-20 md:px-20 py-10 px-10">
 							<i className="pi pi-user font-bold text-yellow-600 p-2 text-3xl"></i>
 							<p className="text-yellow-600 md:text-3xl font-bold">
 								5,000,000+
 							</p>
 							<p className="mt-4 md:text-xl text-yellow-600">Verified Users</p>
 						</div>
-						<div className="border hover:bg-gray-200 cursor-pointer text-center md:py-20 md:px-20 py-10 px-10">
+						<div className="border bg-white hover:bg-gray-200 cursor-pointer text-center md:py-20 md:px-20 py-10 px-10">
 							<i className="pi pi-star font-bold text-yellow-600 p-2 text-3xl"></i>
 							<p className="text-yellow-600 md:text-3xl font-bold">5,000+</p>
 							<p className="mt-4 md:text-xl text-yellow-600">5-Star Reviews</p>

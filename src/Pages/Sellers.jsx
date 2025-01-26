@@ -550,8 +550,7 @@ export default function Sellers() {
 									sell feet content. Encrypted servers, PCI-compliant security
 									and third party firewall ensures your data and card info
 									remains hidden and safe from potential threats. No other
-									websites to sell feet pics offer the same level of security
-									and have the track record of MagnificentSoles.
+									websites to sell feet pics than MagnificentSoles.
 								</p>
 							</div>
 						</div>

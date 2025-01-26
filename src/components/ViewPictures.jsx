@@ -41,30 +41,29 @@ const ViewPictures = () => {
 				
 				<div className="flex justify-center place-item-center ">
 					<div className="mt-12 lg:w-[87%] md:w-[87%] px-2">
-						<h1 className="md:mt-10 lg:mt-10 sm:mt-10 mb-6 md:text-[2.8rem] text-[1.4rem] text-center font-bold text-white">
-							Welcome back customer,Happy to see you!
+						<h1 className="md:mt-10 lg:mt-10 sm:mt-10 mb-6 md:text-[2rem] text-[1.4rem] text-center font-bold text-white">
+							Welcome back to our website,Happy to see you!
 						</h1>
 
 						{loading ? (
 							<p className="text-white">Loading pictures...</p>
 						) : (
 							<div
-								className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4"
+								className="grid grid-cols-2 gap-2 pb-2 lg:gap-10 md:mx-3  md:py-2 md:px-3 mx-3"
 								>
 								{pictures.length > 0 ? (
 									pictures.map((pic) => (
-										<div className="border pb-2 lg:gap-10 md:mx-3 md:py-2 md:px-3 mx-2" key={pic.id}>
+										<div className="border mb-2 border-gray-300 px-1" key={pic.id}>
 											<img
 												src={pic.imageUrl}
 												alt="Uploaded"
-												className="w-full h-[30vh] md:h-[50vh]"
+												className="w-full h-[25vh] md:h-[50vh]"
 												
 												onError={(e) => (e.target.src = "fallback-image.jpg")}
 											/>
-											<div className=" mt-3 flex justify-between">
-												<p className="mt-2 text-white">
-													<span className="text-yellow-600 md:text-xl">Price:</span> #
-													{pic.price}
+											<div className=" mt-2 mb-3 flex justify-between gap-2">
+												<p className=" text-white">
+													<span className="text-yellow-600 md:text-xl">Price:</span> <br /> #{pic.price}
 												</p>
 												<button
 													onClick={() => handleBuyClick(pic.id)}
@@ -75,22 +74,22 @@ const ViewPictures = () => {
 										</div>
 									))
 								) : (
-									<p className="text-white">No pictures available.</p>
+									<p className="text-white">No pictures available,check your internet.</p>
 								)}
 							</div>
 						)}
 					</div>
 				</div>
 
-                <div className="mt-20 ml-3 lg:ml-28 md:ml-28">
+                {/* <div className="mt-20 ml-3 lg:ml-28 md:ml-28">
                 <Link
 					to="/"
 					className="font-bold rounded-xl border border-white bg-yellow-600 hover:bg-white hover:text-black py-2 px-4 md:text-xl text-white cursor-pointer"
 					onClick={() => setIsOpen(false)}>
 					Back to home
 				</Link>
-                </div>
-
+                </div> */}
+<hr />
 				<div>
 					<Footer />
 				</div>
