@@ -37,10 +37,10 @@ const ViewPictures = () => {
 
 	return (
 		<>
-			<div className="bg-black">
+			<div className="bg-black mt-10">
 				
 				<div className="flex justify-center place-item-center ">
-					<div className="mt-32 w-[87%]">
+					<div className="mt-12 lg:w-[87%] md:w-[87%] px-2">
 						<h1 className="md:mt-10 lg:mt-10 sm:mt-10 mb-6 md:text-[2.8rem] text-[1.4rem] text-center font-bold text-white">
 							Welcome back customer,Happy to see you!
 						</h1>
@@ -49,30 +49,26 @@ const ViewPictures = () => {
 							<p className="text-white">Loading pictures...</p>
 						) : (
 							<div
-								className="border border-red-600"
-								style={{
-									display: "grid",
-									gridTemplateColumns: "repeat(3, 1fr)",
-									gap: "15px",
-								}}>
+								className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4"
+								>
 								{pictures.length > 0 ? (
 									pictures.map((pic) => (
-										<div className="border gap-10" key={pic.id}>
+										<div className="border lg:gap-10 md:mx-3 md:py-2 md:px-3 mx-2" key={pic.id}>
 											<img
 												src={pic.imageUrl}
 												alt="Uploaded"
-												className="w-full"
-												style={{ maxWidth: "100%" }}
+												className="w-full h-[30vh] md:h-[50vh]"
+												
 												onError={(e) => (e.target.src = "fallback-image.jpg")}
 											/>
 											<div className=" mt-3 flex justify-between">
 												<p className="mt-2 text-white">
-													<span className="text-red-600">Price:</span> #
+													<span className="text-yellow-600 md:text-xl">Price:</span> #
 													{pic.price}
 												</p>
 												<button
 													onClick={() => handleBuyClick(pic.id)}
-													className="bg-[green] text-white hover:bg-green-600 rounded-lg py-[10px] px-[20px] cursor-pointer">
+													className="border border-white bg-yellow-600 hover:bg-white hover:text-black rounded-xl text-xm px-2 py-1 md:py-2 md:px-4 md:text-xl text-white cursor-pointer">
 													Buy Picture
 												</button>
 											</div>
@@ -86,10 +82,10 @@ const ViewPictures = () => {
 					</div>
 				</div>
 
-                <div>
+                <div className="mt-20 ml-3 lg:ml-28 md:ml-28">
                 <Link
 					to="/"
-					className="font-bold mt-10 rounded-xl border border-white py-2 px-4 md:text-xl text-white"
+					className="font-bold rounded-xl border border-white bg-yellow-600 hover:bg-white hover:text-black py-2 px-4 md:text-xl text-white cursor-pointer"
 					onClick={() => setIsOpen(false)}>
 					Back to home
 				</Link>
