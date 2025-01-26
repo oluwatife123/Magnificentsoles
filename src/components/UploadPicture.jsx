@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import savePictureData from "../firebase/firestoreUtils";
 import uploadToCloudinary from "../firebase/uploadToCloudinary";
 import { auth } from "../firebase/firebaseConfig";
+import Footer from "./Footer";
 
 const UploadPicture = ({ addPicture, pictures = [], deletePicture }) => {
   const [isUploading, setIsUploading] = useState(false);
@@ -45,6 +46,7 @@ const UploadPicture = ({ addPicture, pictures = [], deletePicture }) => {
   };
 
   return (
+    <>
     <div className="mt-32">
       <h2>Upload a Picture</h2>
       <div>
@@ -115,6 +117,11 @@ const UploadPicture = ({ addPicture, pictures = [], deletePicture }) => {
         )}
       </div>
     </div>
+    <div className="">
+        <Footer />
+
+    </div>
+    </>
   );
 };
 

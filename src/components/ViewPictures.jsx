@@ -53,7 +53,7 @@ const ViewPictures = () => {
 								>
 								{pictures.length > 0 ? (
 									pictures.map((pic) => (
-										<div className="border lg:gap-10 md:mx-3 md:py-2 md:px-3 mx-2" key={pic.id}>
+										<div className="border pb-2 lg:gap-10 md:mx-3 md:py-2 md:px-3 mx-2" key={pic.id}>
 											<img
 												src={pic.imageUrl}
 												alt="Uploaded"
