@@ -1,6 +1,6 @@
 export class ProductService {
     async getProductsSmall() {
-        // Mocked product data
+    
         return [
             { id: '1000', name: 'Feet Finder is UNDEFEATED!', image: 'bamboo-watch.jpg', text:'They are awesome! the platform is seemless,and they make everything convinient and smooth,love the algorithm and abili...', date: 'Harley reed,june 12 ' },
 

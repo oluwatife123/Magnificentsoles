@@ -1,4 +1,5 @@
 import React from "react";
+import youtube from "../public/youtube.jpg"
 import Menubar from "../Auth/Menubar";
 
 export default function HowItWorks() {
@@ -15,15 +16,16 @@ export default function HowItWorks() {
 							<span className="box-border justify-center items-center w-full block absolute inset-0">
 								<img
 									alt="How It Works Image"
-									src="https://productionspaces.nyc3.cdn.digitaloceanspaces.com/staticImages/ExtraImages/how_it_work_purpel_theme.webp"
+									src={youtube}
 									decoding="async"
-									className="absolute inset-0 box-border m-auto block"
+									className="absolute lg:h-[90vh] md:h-[40vh] w-[100%] rounded-2xl inset-0 box-border m-auto block"
 								/>
 							</span>
 
 							{/* Icon container */}
 							<p className="relative flex justify-center items-center mt-4">
 								<span>
+									<a href="https://www.youtube.com/watch?v=yrMGDy7a7wY" className="hover:cursor-pointer">
 									<i>
 										<svg
 											width="100"
@@ -41,6 +43,7 @@ export default function HowItWorks() {
 											/>
 										</svg>
 									</i>
+									</a>
 								</span>
 							</p>
 						</div>

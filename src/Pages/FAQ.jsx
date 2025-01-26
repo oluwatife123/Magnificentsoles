@@ -5,7 +5,7 @@ export default function FAQ() {
   return (
     <>
     <Menubar />
-    <div>FAQ</div>
+    <div className='mt-24 mt- font-semibold text-2xl'>404 page not found</div>
     </>
   )
 }

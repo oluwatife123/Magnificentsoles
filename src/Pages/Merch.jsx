@@ -5,7 +5,7 @@ export default function Merch() {
   return (
     <>
     <Menubar />
-    <div>Merch</div>
+    <div className='mt-60'>404 page not found</div>
     </>
   )
 }

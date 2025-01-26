@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import { Carousel } from "primereact/carousel";
 import TextSlider from "../components/TextSlider";
@@ -39,7 +40,7 @@ export default function Sellers() {
 				<div className="bg-black h-[100%]">
 					{/* how it works */}
 					<div className="pt-5 text-white ">
-						<p className="mt-10 mb-6 md:text-[2.8rem] text-[1.4rem] text-center font-bold">
+						<p className="md:mt-10 lg:mt-10 sm:mt-10 mb-6 md:text-[2.8rem] text-[1.4rem] text-center font-bold">
 							MEMBER FEATURES
 						</p>
 					</div>
@@ -97,7 +98,7 @@ export default function Sellers() {
 							</ul>
 						</div>
 						{/* image */}
-						<div className="border border-white p-2">
+						<div className="border rounded-xl border-white p-2">
 							<img
 								src={MS}
 								className="shadow-2xl px-3 md:px-0 h-[30vh]"
@@ -107,12 +108,10 @@ export default function Sellers() {
 					</div>
 				</div>
 
-				<hr className="mt-4 h-4 w-full text-yellow-600" />
-
 				{/* verified model page */}
 				<div className="bg-black ">
 					<div className=" ">
-						<p className="pt-10 mb-6 text-[1.4rem] text-white md:text-[2.8rem] text-center font-bold">
+						<p className="md:pt-10 mb-6 text-[1.4rem] text-white md:text-[2.8rem] text-center font-bold">
 							VERIFIED MODELS
 						</p>
 
@@ -504,7 +503,16 @@ export default function Sellers() {
 						</div>
 					</div>
 					{/* upload page */}
-					<div className="border border-red-400 mx-40 py-24"></div>
+					<div className="border border-red-400 mx-10 md:mx-40 py-24 justify-center place-items-center flex">
+					<Link
+									to="/manager"
+									className="pi pi-plus text-white text-[3rem]"
+									onClick={() => setIsOpen(false)}>
+									
+									
+								</Link>
+						
+					</div>
 					{/* feet worth button */}
 					<div className="flex items-center justify-center py-10">
 						<button className="border border-white hover:text-black text-white bg-yellow-600 px-10 md:px-20 py-5 rounded-full hover:bg-white">

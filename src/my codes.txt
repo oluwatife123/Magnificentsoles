@@ -1,0 +1,151 @@
+// Import dependencies
+import React from "react";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { getAuth, onAuthStateChanged } from "firebase/auth";
+import { getFirestore, collection, addDoc, getDocs, updateDoc, doc } from "firebase/firestore";
+import { getStorage, ref, uploadBytes, getDownloadURL } from "firebase/storage";
+import { initializeApp } from "firebase/app";
+
+// Firebase configuration
+const firebaseConfig = {
+  apiKey: "YOUR_API_KEY",
+  authDomain: "YOUR_AUTH_DOMAIN",
+  projectId: "YOUR_PROJECT_ID",
+  storageBucket: "YOUR_STORAGE_BUCKET",
+  messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
+  appId: "YOUR_APP_ID",
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const auth = getAuth(app);
+const db = getFirestore(app);
+const storage = getStorage(app);
+
+// View and Buy Pictures Page
+function ViewPictures() {
+  const [pictures, setPictures] = React.useState([]);
+  const [user, setUser] = React.useState(null);
+
+  React.useEffect(() => {
+    onAuthStateChanged(auth, (currentUser) => {
+      setUser(currentUser);
+    });
+
+    const fetchPictures = async () => {
+      const querySnapshot = await getDocs(collection(db, "pictures"));
+      const pics = querySnapshot.docs.map((doc) => ({ id: doc.id, ...doc.data() }));
+      setPictures(pics);
+    };
+    fetchPictures();
+  }, []);
+
+  const handleBuy = async (picture) => {
+    if (!user) {
+      alert("Please log in to buy pictures.");
+      return;
+    }
+
+    await updateDoc(doc(db, "pictures", picture.id), {
+      buyerId: user.uid,
+    });
+
+    alert("Picture bought successfully!");
+  };
+
+  return (
+    <div>
+      <h1>Available Pictures</h1>
+      <div className="pictures">
+        {pictures.map((picture) => (
+          <div key={picture.id} className="picture-card">
+            <img src={picture.url} alt={picture.title} width="200" />
+            <h3>{picture.title}</h3>
+            <p>${picture.price.toFixed(2)}</p>
+            {picture.buyerId ? (
+              <p>Sold</p>
+            ) : user ? (
+              <button onClick={() => handleBuy(picture)}>Buy</button>
+            ) : (
+              <p>Log in to buy</p>
+            )}
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+// Sell Pictures Page
+function SellPictures() {
+  const [file, setFile] = React.useState(null);
+  const [title, setTitle] = React.useState("");
+  const [price, setPrice] = React.useState("");
+  const [user, setUser] = React.useState(null);
+
+  React.useEffect(() => {
+    onAuthStateChanged(auth, (currentUser) => {
+      setUser(currentUser);
+    });
+  }, []);
+
+  const handleUpload = async () => {
+    if (!file || !title || !price) {
+      alert("Please fill in all fields and select a file.");
+      return;
+    }
+
+    const storageRef = ref(storage, `pictures/${file.name}`);
+    await uploadBytes(storageRef, file);
+    const url = await getDownloadURL(storageRef);
+
+    await addDoc(collection(db, "pictures"), {
+      title,
+      price: parseFloat(price),
+      url,
+      sellerId: user.uid,
+    });
+
+    alert("Picture uploaded successfully!");
+    setTitle("");
+    setPrice("");
+    setFile(null);
+  };
+
+  return (
+    <div>
+      <h1>Sell a Picture</h1>
+      <input
+        type="text"
+        placeholder="Title"
+        value={title}
+        onChange={(e) => setTitle(e.target.value)}
+      />
+      <input
+        type="number"
+        placeholder="Price"
+        value={price}
+        onChange={(e) => setPrice(e.target.value)}
+      />
+      <input type="file" onChange={(e) => setFile(e.target.files[0])} />
+      <button onClick={handleUpload}>Upload</button>
+    </div>
+  );
+}
+
+// Main App Component
+function App() {
+  return (
+    <Router>
+      <nav>
+        <Link to="/">View and Buy Pictures</Link> | <Link to="/sell">Sell Pictures</Link>
+      </nav>
+      <Routes>
+        <Route path="/" element={<ViewPictures />} />
+        <Route path="/sell" element={<SellPictures />} />
+      </Routes>
+    </Router>
+  );
+}
+
+export default App;

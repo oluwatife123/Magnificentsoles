@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Button } from "primereact/button";
 import { Carousel } from "primereact/carousel";
 import { Tag } from "primereact/tag";
-import { ProductService } from "./ProductService"; // Ensure this path is correct
+import { ProductService } from "./ProductService"; 
 
 export default function BlogsSlider() {
 	const [products, setProducts] = useState([]);
@@ -43,12 +43,12 @@ export default function BlogsSlider() {
 	};
 
 	useEffect(() => {
-		// Create an instance of ProductService
+	
 		const productService = new ProductService();
 
-		// Fetch products and update state
+
 		productService.getProductsSmall().then((data) => {
-			setProducts(data.slice(0, 9)); // Limit to 9 products
+			setProducts(data.slice(0, 9));
 		});
 	}, []);
 

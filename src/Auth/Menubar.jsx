@@ -1,21 +1,21 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { getAuth } from "firebase/auth";
-import app from "../firebase/firebaseConfig"; // Import the initialized Firebase app
+import app from "../firebase/firebaseConfig";
 import "primeicons/primeicons.css";
 import MS from "../public/MSlogo.jpg";
 
 function Menubar() {
-	const [isOpen, setIsOpen] = useState(false); // State to manage menu visibility
+	const [isOpen, setIsOpen] = useState(false);
 	const [user, setUser] = useState(null);
 
 	useEffect(() => {
 		const auth = getAuth(app);
 		const unsubscribe = auth.onAuthStateChanged((user) => {
-			setUser(user); // Update user state based on authentication
+			setUser(user); 
 		});
 
-		return () => unsubscribe(); // Cleanup the subscription on unmount
+		return () => unsubscribe();
 	}, []);
 
 	return (
@@ -94,8 +94,8 @@ function Menubar() {
 							<button
 								onClick={() => {
 									const auth = getAuth(app);
-									auth.signOut(); // Sign out the user
-									setUser(null); // Clear the user state
+									auth.signOut();
+									setUser(null);
 								}}
 								className="text-white hover:text-yellow-600 hover:animate-pulse font-semibold md:mt-4 lg:mt-5 py-1 pl-1 pr-9">
 								Logout

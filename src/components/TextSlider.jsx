@@ -46,7 +46,6 @@ export default function TextSlider() {
 	};
 
 	useEffect(() => {
-		// Create an instance of ProductService
 		const productService = new ProductService();
 		productService
 			.getProductsSmall()

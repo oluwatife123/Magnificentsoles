@@ -9,9 +9,13 @@ import Blogs from "./Pages/Blogs";
 import SignUp from "./Auth/SignUp";
 import Login from "./Auth/Login";
 import ProtectedRoute from "./components/ProtectedRoute"; // Import ProtectedRoute
+import UploadPicture from "./components/UploadPicture";
+import ViewPictures from "./components/ViewPictures";
+import PicturesManager from "./components/PicturesManager";
 
 const App = () => {
   return (
+    <>
     <Router>
       <Menubar />
       <Routes>
@@ -24,8 +28,17 @@ const App = () => {
         <Route path="/how-it-works" element={<ProtectedRoute><HowItWorks /></ProtectedRoute>} />
         <Route path="/faq" element={<ProtectedRoute><FAQ /></ProtectedRoute>} />
         <Route path="/blogs" element={<ProtectedRoute><Blogs /></ProtectedRoute>} />
+        <Route path="/view" element={<ViewPictures /> }/>
+        <Route path="/manager" element={<PicturesManager /> }/>
+        <Route path="/upload" element={<UploadPicture />} />
       </Routes>
     </Router>
+    <div className="">
+     
+      
+
+    </div>
+    </>
   );
 };
 
