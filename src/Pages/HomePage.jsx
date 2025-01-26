@@ -5,7 +5,6 @@ import Sellers from "./Sellers";
 import banner from "../public/banner.png";
 import homebanner from "../public/homebanner.png";
 import { Link } from "react-router-dom";
-import SignUp from "../Auth/SignUp";
 
 export default function HomePage() {
 	return (
@@ -33,7 +32,7 @@ export default function HomePage() {
 							<Link
 									to="/view"
 									className="font-bold md:text-xl"
-									onClick={() => setIsOpen(false)}>
+									>
 									View/Buy Feet Pics
 								</Link>
 								{/* <p className=" font-bold md:text-xl">
@@ -44,7 +43,7 @@ export default function HomePage() {
 							<Link
 									to="/manager"
 									className="font-bold md:text-xl"
-									onClick={() => setIsOpen(false)}>
+									>
 									Sell Feet Pics
 								</Link>
 								{/* <p className=" font-bold md:text-xl">
