@@ -32,7 +32,7 @@ export default function HomePage() {
 							<Link
 									to="/view"
 									className="font-bold md:text-xl"
-									>
+									onClick={() => setIsOpen(false)}>
 									View/Buy Feet Pics
 								</Link>
 								{/* <p className=" font-bold md:text-xl">
@@ -43,7 +43,7 @@ export default function HomePage() {
 							<Link
 									to="/manager"
 									className="font-bold md:text-xl"
-									>
+									onClick={() => setIsOpen(false)}>
 									Sell Feet Pics
 								</Link>
 								{/* <p className=" font-bold md:text-xl">
