@@ -213,7 +213,7 @@ export default function Sellers() {
 										alt="pictures"
 									/>
 								</div>
-								<p className="text-center font-bold mt-4  md:text-lg">
+								<p className="text-center text-white font-bold mt-4  md:text-lg">
 									HIGH HEELS{" "}
 								</p>
 							</a>
@@ -226,7 +226,7 @@ export default function Sellers() {
 										alt="pictures"
 									/>
 								</div>
-								<p className="text-center font-bold mt-4  md:text-lg">SOLES </p>
+								<p className="text-center text-white font-bold mt-4  md:text-lg">SOLES </p>
 							</a>
 							{/* C  */}
 							<a href="#" className="">
@@ -237,7 +237,7 @@ export default function Sellers() {
 										alt="pictures"
 									/>
 								</div>
-								<p className="text-center font-bold mt-4  md:text-lg">
+								<p className="text-center text-white font-bold mt-4  md:text-lg">
 									NAIL POLISH{" "}
 								</p>
 							</a>
@@ -250,7 +250,7 @@ export default function Sellers() {
 										alt="pictures"
 									/>
 								</div>
-								<p className="text-center font-bold mt-4  md:text-lg">SOCKS </p>
+								<p className="text-center text-white font-bold mt-4  md:text-lg">SOCKS </p>
 							</a>
 
 							{/* Grids 2 */}
@@ -264,7 +264,7 @@ export default function Sellers() {
 										alt="pictures"
 									/>
 								</div>
-								<p className="text-center font-bold mt-4  md:text-lg">
+								<p className="text-center text-white font-bold mt-4  md:text-lg">
 									LOTION{" "}
 								</p>
 							</a>
@@ -277,7 +277,7 @@ export default function Sellers() {
 										alt="pictures"
 									/>
 								</div>
-								<p className="text-center font-bold mt-4  md:text-lg">
+								<p className="text-center text-white font-bold mt-4  md:text-lg">
 									PEDICURE{" "}
 								</p>
 							</a>
@@ -290,7 +290,7 @@ export default function Sellers() {
 										alt="pictures"
 									/>
 								</div>
-								<p className="text-center font-bold mt-4  md:text-lg">
+								<p className="text-center text-white font-bold mt-4  md:text-lg">
 									DIRTY FEET{" "}
 								</p>
 							</a>
@@ -303,7 +303,7 @@ export default function Sellers() {
 										alt="pictures"
 									/>
 								</div>
-								<p className="text-center font-bold mt-4  md:text-lg">MALE</p>
+								<p className="text-center text-white font-bold mt-4  md:text-lg">MALE</p>
 							</a>
 
 							{/* Grids 3 */}
@@ -317,7 +317,7 @@ export default function Sellers() {
 										alt="pictures"
 									/>
 								</div>
-								<p className="text-center font-bold mt-4  md:text-lg">
+								<p className="text-center text-white font-bold mt-4  md:text-lg">
 									DANCER{" "}
 								</p>
 							</a>
@@ -330,7 +330,7 @@ export default function Sellers() {
 										alt="pictures"
 									/>
 								</div>
-								<p className="text-center font-bold mt-4  md:text-lg">
+								<p className="text-center text-white font-bold mt-4  md:text-lg">
 									TATTOO{" "}
 								</p>
 							</a>
@@ -343,7 +343,7 @@ export default function Sellers() {
 										alt="pictures"
 									/>
 								</div>
-								<p className="text-center font-bold mt-4  md:text-lg">
+								<p className="text-center text-white font-bold mt-4  md:text-lg">
 									SHOWING FACE{" "}
 								</p>
 							</a>
@@ -356,7 +356,7 @@ export default function Sellers() {
 										alt="pictures"
 									/>
 								</div>
-								<p className="text-center font-bold mt-4  md:text-lg">NYLON </p>
+								<p className="text-center text-white font-bold mt-4  md:text-lg">NYLON </p>
 							</a>
 						</div>
 					</div>

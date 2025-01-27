@@ -46,14 +46,14 @@ const ViewPictures = () => {
 						</h1>
 
 						{loading ? (
-							<p className="text-white">Loading pictures...</p>
+							<p className="text-white my-4">Loading pictures...</p>
 						) : (
 							<div
 								className="grid grid-cols-2 gap-2 pb-2 lg:gap-10 md:mx-3  md:py-2 md:px-3 mx-3"
 								>
 								{pictures.length > 0 ? (
 									pictures.map((pic) => (
-										<div className="border mb-2 border-gray-300 px-1" key={pic.id}>
+										<div className="hover:border mb-2 border-gray-300 px-1" key={pic.id}>
 											<img
 												src={pic.imageUrl}
 												alt="Uploaded"
